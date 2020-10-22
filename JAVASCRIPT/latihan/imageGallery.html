@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- METADATA -->
+    <meta charset="UTF-8">
+    <meta name='description' content="Belajar Pemrograman Web">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="author" content="Hanendyo Indira">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JUDUL WEB PAGE -->
+    <title>Image Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            line-height: 0;
+        }
+
+        body {
+            background-color: lightgrey;
+            text-align: center;
+            height: 100%;
+        }
+
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            border: 5px solid black;
+            overflow: auto;
+            /* box-sizing: border-box; */
+        }
+
+        .thumb {
+            width: 200px;
+            float: left;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        .thumb:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade {
+            opacity: 0;
+            animation: fadeIn 0.5s
+        }
+
+        .active {
+            opacity: 0.3;
+        }
+
+        audio {
+            filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+            width: 400px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class='container'>
+        <img src="./img/webi1.JPG" alt="img" class='utama'>
+
+        <div class='thumbnail'>
+            <img src="./img/webi1.jpg" alt="img" class='thumb'>
+            <img src="./img/webi2.jpg" alt="img" class='thumb'>
+            <img src="./img/webi3.jpg" alt="img" class='thumb'>
+            <img src="./img/webi4.jpg" alt="img" class='thumb'>
+            <img src="./img/webi5.jpg" alt="img" class='thumb'>
+            <img src="./img/webi6.jpg" alt="img" class='thumb'>
+            <img src="./img/webi7.jpg" alt="img" class='thumb'>
+            <img src="./img/webi8.jpg" alt="img" class='thumb'>
+        </div>
+
+        <audio controls>
+            <source src="./img/Ran - Pandangan Pertama.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+
+    </div>
+
+
+</body>
+<script src='./imageGallery.js'></script>
+
+</html>

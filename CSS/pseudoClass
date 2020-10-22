@@ -1,0 +1,8 @@
+Dimensi{
+        width:
+        height:
+
+        //persen(%): relatif terhadap parent pembungkusnya
+        //pixel(px): absolut
+    }
+

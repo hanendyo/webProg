@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>CSS learning</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h2>FONT STYLING</h2>
+        </legend>
+        <h3 class='font-family'>paragraf ini fontnya adalah Arial</h3>
+        <h3 class="font-size">paragraf ini ukurannya adalah 30px</h3>
+        <h3 class="font-weight">paragraf ini font weightnya adalah 'lighter'</h3>
+        <h3 class="font-variant">paragraf ini memakai Font variant (small-caps)</h3>
+        <h3 class="font-style">paragraf ini font stylenya italic</h3>
+        <h3 class="line-height">paragraf ini line heightnya (jarak antar baris) 50px</h3>
+        <h3 class="shorthand">paragraf ini terdiri dari style css FONT yg digabungkan</h3>
+        <p>urutan pada shorthand= (1. font-style: optional)(2. font-variant: optional)(3. font-weight: optional)
+            (4. font-size: wajib)/(5.font-heigth: optional)(6. font-family: wajib)
+        </p>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>
+            <h2>TEXT STYLING</h2>
+        </legend>
+        <h3 class="color">paragraf ini warnanya adalah coral</h3>
+        <h3 class="text-align">paragraf ini posisinya berada di tengah</h3>
+        <h3 class="text-indent">paragraf ini menggunakan text-indent. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Sequi blanditiis expedita voluptas modi magni, reiciendis beatae consequuntur, suscipit omnis nostrum
+            culpa. Quia in voluptas illo, eos eaque odit alias ratione.</h3>
+        <h3 class="text-decoration">paragraf ini text-decorationnya line-through</h3>
+        <h3 class="text-transform">paragraf ini text-transformnya uppercase</h3>
+        <h3 class="letter-spacing">paragraf ini menggunakan letter-spacing</h3>
+        <h3 class="word-spacing">paragraf ini menggunakan word-spacing</h3>
+    </fieldset>
+
+    <br>
+
+    <fieldset class='bekgron'>
+        <legend>
+            <h2>BACKGROUND (background-color fieldset ini adalah rgb(206, 178, 178))</h2>
+        </legend>
+        <h3 class="background-color">paragraf ini background-colornya adalah burlywood</h3>
+        <h3 class="background-image">paragraf ini ada background-image nya. <br><br><br></h3>
+        <h3 class="background-position">background-imagenya berposisi di top-right <br><br><br><br></h3>
+        <h3 class="background-repeat">
+            <p style="background-color: aliceblue;">background-imagenya berulang terhadap sumbu x</p> <br><br><br>
+        </h3>
+        <h3 class="shorthandBackground">
+            <p style="background-color: aliceblue;">paragraf ini menggunakan shorthand background</p>
+            <br><br><br><br><br><br>
+        </h3>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>
+            <h2>SELECTOR</h2>
+        </legend>
+        <h3 id='selector-id'>paragraf ini di-select menggunakan id selector</h3>
+        <h3 class='selector-class secondClass'>paragraf ini di-select menggunakan class selector dan mempunyai 2 class
+        </h3>
+        <ul>
+            <li><a href="">paragraf ini memakai spesification selector (tag ul)</a></li>
+            <li><a href="">paragraf ini memakai spesification selector</a></li>
+        </ul>
+        <ol>
+            <li><a href="">paragraf ini memakai spesification selector (tag ol)</a></li>
+            <li><a href="">paragraf ini memakai spesification selector</a></li>
+        </ol>
+    </fieldset>
+
+    <br>
+
+    <fieldset class="pseudo">
+        <legend>
+            <h2 id="sudo">PSEUDO CLASS</h2>
+        </legend>
+        <h3>PSEUDO CLASS = kelas semu yg mendefinisikan style pada KEADAAN TERTENTU.
+            <br>
+            <a class="link" href="#sudo">:link</a> = style default link
+            <br>
+            <a class="hover" href="#sudo">:hover</a> = style ketika link dihover
+            <br>
+            <a class="active" href="#sudo">:active</a> = style ketika link diklik
+            <br>
+            <a class="visited" href="#sudo">:visited</a> = style ketika link sudah pernah dikunjungi
+            <p></p>
+
+
+        </h3>
+        <div>
+            <ol class="pseudo">
+                <li><a href="">list</a> </li>
+                <li><a href="">list</a> </li>
+                <li><a href="">list</a> </li>
+                <li><a href="">list</a> </li>
+                <li><a href="">list</a> </li>
+                <li><a href="">list</a> </li>
+                <li><a href="">list</a> </li>
+                <li><a href="">list</a> </li>
+                <li><a href="">list</a> </li>
+                <li><a href="">list</a> </li>
+                <li><a href="">list</a> </li>
+                <li><a href="">list</a> </li>
+            </ol>
+        </div>
+
+        <fieldset>
+            <legend>first-of-type & last-of-type</legend>
+            <div>
+                <h4>paragraf ini terpengaruh oleh first-of-type karena h4 nya pertama </h4>
+                <h4>paragraf ini terpengaruh oleh last-of-type karena h4 nya terakhir</h4>
+            </div>
+        </fieldset>
+    </fieldset>
+
+    <fieldset class='contoh'>
+        <legend class="jangan">
+            <h2 style="color: black;">inherit</h2>
+        </legend>
+        <h1>hello world</h1>
+        <p>color pada link dibawah akan sama dengan warna parentnya (inherit)</p>
+        <a id='inherit' href="">link-link-link</a>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda provident consectetur debitis sint
+            eveniet veritatis hic molestiae exercitationem ducimus? Inventore animi eos ea impedit quis? Veritatis
+            asperiores quas sunt ut.</p>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            <h2>SPECIFICITY</h2>
+        </legend>
+        <p>
+            inline > id > class > element
+            <br>
+            jika menselect suatu elemen lebih spesifik, maka elemen itu lebih berat dan yg akan dipilih html.
+            <br><br>
+            contoh:
+
+        <p style="background-color: aqua; border: 1px solid black; padding: 10px 10px;">
+            fieldset ul li a {<br>
+            color: red;<br>
+            } <br>
+            <br>
+            contoh diatas lebih berat dibanding dengan dibawah ini <br>
+            <br>
+            li a {<br>
+            color: green; <br>
+            } <br>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h2>DIMENSI & OVERFLOW</h2>
+        </legend>
+        <h3>DIMENSI:</h3>
+        <div class="dimensi1">
+            <p>parent div, width: 200px</p>
+            <div class="dimensi2">
+                <p>child div, width: 80%</p>
+            </div>
+        </div>
+        <br>
+        <h3>OVERFLOW:</h3>
+        <div class="visible">
+            <p>
+                1. OVERFLOW VISIBLE.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, laudantium laboriosam molestiae
+                sapiente repudiandae facilis amet architecto harum dicta repellat cupiditate dolorum itaque ea alias
+                exercitationem quisquam ullam esse perferendis?<br><br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, ut. Animi maiores expedita error sequi
+                deserunt hic suscipit eveniet quibusdam reiciendis placeat modi reprehenderit, dignissimos facere,
+                consequuntur molestias blanditiis velit?
+            </p>
+        </div>
+        <br><br><br><br><br>
+        <div class="auto">
+            <p>
+                2. OVERFLOW AUTO <br><br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, laudantium laboriosam molestiae
+                sapiente repudiandae facilis amet architecto harum dicta repellat cupiditate dolorum itaque ea alias
+                exercitationem quisquam ullam esse perferendis?<br><br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, ut. Animi maiores expedita error sequi
+                deserunt hic suscipit eveniet quibusdam reiciendis placeat modi reprehenderit, dignissimos facere,
+                consequuntur molestias blanditiis velit?
+            </p>
+        </div>
+        <br>
+        <div class="hidden">
+            <p>
+                3. OVERFLOW HIDDEN. <br><br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, laudantium laboriosam molestiae
+                sapiente repudiandae facilis amet architecto harum dicta repellat cupiditate dolorum itaque ea alias
+                exercitationem quisquam ullam esse perferendis?<br><br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, ut. Animi maiores expedita error sequi
+                deserunt hic suscipit eveniet quibusdam reiciendis placeat modi reprehenderit, dignissimos facere,
+                consequuntur molestias blanditiis velit?
+            </p>
+        </div>
+        <br>
+        <div class="scroll">
+            <p>
+                4. OVERFLOW SCROLL. <br><br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, laudantium laboriosam molestiae
+                sapiente repudiandae facilis amet architecto harum dicta repellat cupiditate dolorum itaque ea alias
+                exercitationem quisquam ullam esse perferendis?<br><br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, ut. Animi maiores expedita error sequi
+                deserunt hic suscipit eveniet quibusdam reiciendis placeat modi reprehenderit, dignissimos facere,
+                consequuntur molestias blanditiis velit?
+            </p>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>
+            <h2>BOX MODEL</h2>
+        </legend>
+        <fieldset>
+            <legend>
+                <h3>Margin</h3>
+            </legend>
+            <p>vertical:</p>
+            <div class='vertical'>
+                <div class="marginVer1">
+                    1<br> marginLeft: 100px, <br> marginTop: 30px, <br> marginRight: 50px, <br> margin-bottom:
+                    100px
+                </div>
+                <div class="marginVer2">2</div>
+                <div class="marginVer3">3</div>
+                <p>
+                    <br><br>
+                    margin Vertical negative:
+                </p>
+                <div class="verticalNegative">
+                    <div class="marginVerNeg1">1 <br> marginBottom: 100px</div>
+                    <div class="marginVerNeg2">2 <br> marginTop: -50px</div>
+                    <div class="marginVerNeg3">3</div>
+
+                </div>
+
+            </div>
+            <br><br><br>
+            <p>horizontal:</p>
+            <div class="horizontal">
+                <div class="marginHor1">
+                    1 <br> marginRight: 30px
+                </div>
+                <div class="marginHor2">2 <br> marginLeft: 20px</div>
+                <div class="marginHor3">3</div>
+
+            </div>
+            <p>
+                <br><br>
+                margin Horizontal negative:
+            </p>
+            <div class="horizontalNegative">
+                <div class="marginHorNeg1">1 <br> marginRight: <br> 100px</div>
+                <div class="marginHorNeg2">2 <br> marginLeft: -50px</div>
+                <div class="marginHorNeg3">3</div>
+            </div>
+            <p>
+                <br><br>
+                margin Vertical Auto:
+            </p>
+            <div class="verticalAuto">
+                <div class="marginVerAuto1">1 <br> marginRight & marginLeft: auto;</div>
+                <div class="marginVerAuto2">2 <br> marginRight & marginLeft: auto;</div>
+                <div class="marginVerAuto3">3 <br> </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h2>PADDING</h2>
+            </legend>
+            <div class="padding">padding: 50px <br>(top, right, bottom, left)</div>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h2>BORDER</h2>
+            </legend>
+            <div class="border">
+                <div class="borderSolid">border: <br> 3px solid black</div>
+                <div class="borderDotted">border: <br> 3px dotted red</div>
+                <div class="borderDashed">border: <br> 3px dashed green</div>
+                <div class="borderDouble">border: <br> 3px double yellow</div>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h2>BOX-SIZING</h2>
+            </legend>
+            <div class="box">
+                <div class="boxSizing">box-sizing: border-box <br><br> note: <br>
+                    membuat size dari sebuah box tidak berubah
+                    ketika diberi padding dan border</div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h2>FLOAT</h2>
+            </legend>
+            <div class="floatContainer">
+                <div class="floatRight">floatRight</div>
+                <div class="normal">normal</div>
+                <div class="floatLeft">FloatLeft</div>
+                <p style="float: left;">float: <br>elemen yg diberi value float, maka akan berpindah dimensi
+                    dan keluar dari dimensi parentnya.
+                    maka, elemen setelahnya akan mengambil alih tempat elemen tsb.</p>
+            </div>
+            <fieldset>
+                <legend>
+                    <h3>text wrapping</h3>
+                </legend>
+                <div class="textWrapping">
+                    <img src="../HTML/pictures/kitty.jpeg" alt="">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, optio autem. Ratione
+                        minima fugiat cupiditate aut voluptatem tempora reiciendis perspiciatis obcaecati, ab
+                        inventore officia, iste nesciunt? In nam enim itaque dicta mollitia ipsam minima aut iusto
+                        debitis facere laboriosam tempora possimus veritatis deleniti fugit, atque maxime illo
+                        voluptates impedit quod tempore ad. Quibusdam consectetur eligendi est iure consequuntur,
+                        commodi sequi!</p>
+                    <div class="emptyDiv">"fix float problem with clear: left & a empty div"</div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h3>image gallery</h3>
+                </legend>
+                <div class="imgFloatLeft cf">
+                    <p>float left: (PERHATIKAN ANGKANYA!)</p>
+                    <div class="imageGalleryLeft">1</div>
+                    <div class="imageGalleryLeft">2</div>
+                    <div class="imageGalleryLeft">3</div>
+                    <div class="imageGalleryLeft">4</div>
+                    <div class="imageGalleryLeft">5</div>
+                    <div class="imageGalleryLeft">6</div>
+                    <div class="imageGalleryLeft">7</div>
+                    <div class="imageGalleryLeft">8</div>
+                    <div class="imageGalleryLeft">9</div>
+                    <div class="imageGalleryLeft">10</div>
+                </div>
+                <br>
+                <div class="imgFloatRight cf">
+                    <p class="fr">float right:</p>
+                    <div class="imageGalleryRight">1</div>
+                    <div class="imageGalleryRight">2</div>
+                    <div class="imageGalleryRight">3</div>
+                    <div class="imageGalleryRight">4</div>
+                    <div class="imageGalleryRight">5</div>
+                    <div class="imageGalleryRight">6</div>
+                    <div class="imageGalleryRight">7</div>
+                    <div class="imageGalleryRight">8</div>
+                    <div class="imageGalleryRight">9</div>
+                    <div class="imageGalleryRight">10</div>
+                </div>
+                <div>"fix float problem with metaclear fix!"</div>
+            </fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h3>multi-coloumn layout</h3>
+            </legend>
+            <div class="konte cf">
+                <div class="kiri">float left</div>
+                <div class="tengah">float left</div>
+                <div class="kanan">float left</div>
+            </div>
+            <div>"fix float problem with metaclear fix!"</div>
+        </fieldset>
+
+    </fieldset>
+
+
+
+</body>
+
+</html>

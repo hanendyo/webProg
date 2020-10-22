@@ -1,0 +1,30 @@
+//FONT STYLING
+font-family = jenis font
+font-size = ukuran font
+font-weight = ketebalan font
+font-variant = mengubah font menjadi small caps
+font-style = mengubah font menjadi miring
+line-height =  mengatur spasi antar baris
+shorthand --> font: (1. font-style: optional)(2. font-variant: optional)(3. font-weight: optional)
+                    (4. font-size: wajib)/(5.font-heigth: optional)(6. font-family: wajib) 
+--(/) tambahkan slash jika pake line-height
+
+1. font-family: arial, verdana --> (nama font), sans-serif; --> (generic family)
+--jika parameter lebih dari 1 berarti html bisa memilih lebih dari 1 opsi font.
+
+2. font-size: 10px
+
+3. font-weight: lighter
+
+4. font-variant: small-caps 
+--mengubah huruf kecil menjadi kapital, dan kapital awalnya menjadi semakin besar.
+
+5. font-style: italic
+
+6. line-height: 50px
+
+7. font: italic normal bold 16px/18px arial, sans-serif;
+//
+
+//TEXT STYLING
+

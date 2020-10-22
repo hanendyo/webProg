@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* NOTE! */
+        /* :target --> elemen apapun yg id nya ditarget melalui url, maka css nya akan aktif */
+        .p1:target {
+            background-color: lightcoral;
+        }
+
+        .p2:target {
+            background-color: lightskyblue;
+        }
+
+        .p3:target {
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#p1">link 1</a>
+    <a href="#p2">link 2</a>
+    <a href="#p3">link 3</a>
+
+    <h1 class='judul'>Hellow Guys!</h1>
+
+    <p id='p1' class=p1> paragraf 1</p>
+    <p id='p2' class=p2> paragraf 2</p>
+    <p id='p3' class=p3> paragraf 3</p>
+
+</body>
+
+</html>

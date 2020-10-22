@@ -1,0 +1,14 @@
+Q:  apa itu DOM?
+A:  Representasi elemen HTML pada dokumen 
+    menjadi sebuah objek.
+
+Q:  apa gunanya DOM?
+A:  DOM membuat seluruh komponen dari halaman web
+    dapat diakses & dimanipulasi menggunakan Javascript.
+
+NodeList vs HTMLcollection :
+-struktur data mirip array
+-NodeList: dapat berisi node apapun
+-HTMLcollection: hanya berisi node elemen
+-HTMLcollection bersifat 'live', sedangkan NodeList tidak.
+

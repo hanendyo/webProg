@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="html tutorial">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Hanendyo Indira">
+    <title>Trial html</title>
+    <!-- external css -->
+    <link rel="stylesheet" href="trial.css">
+    <!-- base element -->
+    <!-- <base href="https://www.w3schools.com/" target="_blank"> -->
+
+    <!-- internal CSS -->
+    <!-- <style>
+        body {
+            background-color: powderblue;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        p {
+            color: red;
+        }
+    </style> -->
+
+</head>
+
+<body style="background-color:wheat; 
+    background-image: url(https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); 
+    background-attachment: fixed;
+    background-size: cover;">
+    <!-- background-size: 100%; -->
+
+
+    <h1 style="text-align: center; font-size: 150; color: black;">INTRO HMTL</h1>
+    <br>
+    <hr><br>
+    <!-- untuk masang link -->
+    <h3>create link</h3>
+    <a href="https://www.youtube.com/">memasang link (klik!)</a>
+    <br>
+    <hr><br>
+    <!-- untuk masang gambar -->
+    <!-- Lebih baik menggunakan atribut "style" untuk menspesifikasi gambar -->
+    <h3>put picture</h3>
+    <p>gambar yang diambil berasal dari local storage/document:</p>
+    <img src="./pictures/kitty.jpeg" style="width: 200px; height: 200px;" alt="local">
+    <p>gambar yang diambil berasal dari server di internet</p>
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="internet" style="width: 200px; height: 200px;">
+    <br>
+    <hr><br>
+    <!-- untuk warna pada font -->
+    <h3>color in font</h3>
+    <h1 style="color: cyan;">warna cyan</h1>
+    <p style="color: indigo;">warna indigo</p>
+    <br>
+    <hr><br>
+    <!-- untuk ukuran font -->
+    <h3>font size</h3>
+    <h1 title="i am a title" style="font-size:90px">Ukuran pada font</h1>
+    <p title="i am a title" style="font-size:40px">Ukuran pada font</p>
+    <br>
+    <hr><br>
+    <!-- untuk warna backgroud pada tulisan -->
+    <h3>background behind text</h3>
+    <h1 style="background-color: chartreuse;">warna background pada tulisan</h1>
+    <p style="background-color: orange;">warna background pada tulisan</p>
+    <br>
+    <hr><br>
+    <!-- untuk warna pada font -->
+    <h3>color for font</h3>
+    <h1 style="color: hotpink;">warna pada font</h1>
+    <p style="color: springgreen;">warna pada font</p>
+    <br>
+    <hr><br>
+    <!-- untuk jenis font pada tulisan  -->
+    <h3>font styling</h3>
+    <p style="font-family: monospace">untuk jenis font pada tulisan #1</p>
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif">untuk jenis font pada tulisan #2</p>
+    <p style="font-family: cursive">untuk jenis font pada tulisan #3</p>
+    <br>
+    <hr><br>
+    <!-- untuk penempatan teks -->
+    <h3>font alignment</h3>
+    <h1 style="text-align: center; background-color: tomato; font-size: 40px;">teks di tengah</h1>
+    <h1 style="text-align: left ; background-color: tomato; font-size: 40px;">teks di kiri</h1>
+    <h1 style="text-align: right; background-color: tomato; font-size: 40px;">teks di kanan</h1>
+    <br>
+    <hr><br>
+    <!-- untuk format pada teks -->
+    <h3>text formatting</h3>
+    <p><q>teks menjadi terkutip</q></p>
+    <p><b>teks menjadi Bold</b></p>
+    <p><strong>teks menjadi strong</strong></p>
+    <p><i>teks menjadi italic</i></p>
+    <p><em>teks menjadi emphasized</em></p>
+    <p><mark>teks menjadi mark(ed)</mark></p>
+    <p><small>teks menjadi smaller</small></p>
+    <p><del>teks menjadi deleted</del></p>
+    <p><ins>teks menjadi inserted</ins></p>
+    <p>teks menjadi subscript, contoh: H<sub>2</sub>O</p>
+    <p>teks menjadi upperscript, contoh: O<sup>2</sup></p>
+    <br>
+    <!-- <hr><br> -->
+    <h3 class='kdb'>The kbd Element</h3>
+    <p>The kbd element is used to define keyboard input:</p>
+    <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+    <br>
+    <!-- <hr><br> -->
+    <h3>The Samp element</h3>
+    <p>Message from my computer:</p>
+    <p><samp>File not found.<br>Press F1 to continue</samp></p>
+    <br>
+    <!-- <hr><br> -->
+    <h3>The var Element</h3>
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is
+        the vertical height.</p>
+    <br>
+    <hr><br>
+    <!-- untuk membuat tulisan seperti kutipan dari sumber lain -->
+    <h3>quoting from other site</h3>
+    <p>ini adalah quote dari situs WWF:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature.
+        The world's leading conservation organization,
+        WWF works in 100 countries and is supported by
+        1.2 million members in the United States and
+        close to 5 million globally.
+        <!-- bisa pake "cite=", bisa juga tidak -->
+    </blockquote>
+    <br>
+    <hr><br>
+    <!-- untuk mendefinisikan kependekkan atau akronim -->
+    <h3>abbreviation</h3>
+    <p><abbr title="World Health Organization">WHO </abbr>didirikan pada 1948 (abbr = abbreviations adalah untuk
+        mendefinisikan kependekkan atau akronim)</p>
+    <br>
+    <hr><br>
+    <!-- untuk menuliskan alamat atau informasi -->
+    <h3>address format text</h3>
+    <p>gunanya "address":</p>
+    <br>
+    <address>
+        Griya Waringin Elok A8/3
+        cimanggis,
+        Bojonggede,
+        Bogor,
+        Jawa Barat,
+        Indonesia.
+    </address>
+    <br>
+    <hr><br>
+    <!-- untuk mendefinisikan nama atau judul sebuah pekerjaan atau karya -->
+    <h3>text formatting for name of arts or works</h3>
+    <p>cite digunakan untuk mendefinisikan nama atau judul sebuah pekerjaan atau karya</p>
+    <img src="./pictures/laskarpelangi.jpg" style="height: 250px; width: 200px;" alt="gambar laskar pelangi">
+    <p><cite>Laskar Pelangi </cite> oleh Andrea Hirata</p>
+    <br>
+    <hr><br>
+    <!-- menentukan arah dari teks -->
+    <h3>text direction</h3>
+    <p>Left To Right: </p>
+    <bdo dir="ltr">membuat tulisan menjadi dari kiri ke kanan</bdo>
+    <br>
+    <p>Right To Left: </p>
+    <bdo dir="rtl">membuat tulisan menjadi dari kanan ke kiri</bdo>
+    <br>
+    <hr><br>
+    <!-- untuk memberi border pada teks -->
+    <h3>border for text</h3>
+    <h1 style="border:2px solid springgreen;"> border pada teks</h1>
+    <p style="border:5px ridge steelblue;"> border pada teks</p>
+    <br>
+    <hr><br>
+    <!-- menentukan warna menggunakan RGB -->
+    <h3>color formatting (RGB, HEX, HSL)</h3>
+    <p>RGB: </p>
+    <p>255: highest, 0: lowest</p>
+    <h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+    <h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+    <h1 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+    <h1 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+    <h1 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h1>
+    <h1 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
+    <br> <br>
+    <p>menggunakan alpha sebagai transparansi (parameter ke-4)</p>
+    <p>0: total transparant, 0.5: semi-transparant, 1: not transparant</p>
+    <h1 style="background-color:rgba(255, 99, 71, 0.3);">rgba(255, 99, 71, 0.3)</h1>
+    <br>
+    <hr><br>
+    <!-- menentukan warna menggunakan HEX -->
+    <p>HEX: </p>
+    <p>ff: highest, 00: lowest</p>
+    <h1 style="background-color:#ff0000;">#ff0000</h1>
+    <h1 style="background-color:#0000ff;">#0000ff</h1>
+    <h1 style="background-color:#3cb371;">#3cb371</h1>
+    <h1 style="background-color:#ee82ee;">#ee82ee</h1>
+    <h1 style="background-color:#ffa500;">#ffa500</h1>
+    <h1 style="background-color:#6a5acd;">#6a5acd</h1>
+    <br>
+    <hr><br>
+    <!-- menentukan warna menggunakan HSL -->
+    <p>0: red, 120: green, 240: blue</p>
+    <h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+    <h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+    <h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+    <h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+    <h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+    <h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+    <br><br>
+    <p>menggunakan alpha sebagai transparansi (parameter ke-4)</p>
+    <p>0: total transparant, 0.5: semi-transparant, 1: not transparant</p>
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+    <br>
+    <hr><br>
+    <!-- untuk menentukan dimana link akan dibuka -->
+    <h3>link destination</h3>
+    <a href="https://www.youtube.com/" target="_blank">Visit youtube! (_blank)</a><br>
+    <a href="https://www.youtube.com/" target="_self">Visit youtube! (_self)</a><br>
+    <a href="https://www.youtube.com/" target="_parent">Visit youtube! (_parent)</a><br>
+    <a href="https://www.youtube.com/" target="_top">Visit youtube! (_top)</a><br>
+    <br>
+    <hr><br>
+    <!-- untuk meletakkan link pada gambar  -->
+    <h3>link on image</h3>
+    <p>klik gambar ini!</p>
+    <a href="https://www.youtube.com/" target="_blank"><img src="./pictures/trial.jpeg"
+            style="height: 150px; width: 150px;" alt="link"></a>
+    <br>
+    <hr><br>
+    <!-- membuat tombol menjadi link -->
+    <h3>button as link</h3>
+    <p>link button</p>
+    <button onclick="location.href='https://www.youtube.com/'">glick hir</button>
+    <br>
+    <hr><br>
+    <!-- membuat title pada link -->
+    <h3>title on link</h3>
+    <a href="https://www.youtube.com/" title="ini title">ini link yang bertitle</a>
+    <br>
+    <hr><br>
+    <!-- membuat link bookmark -->
+    <h3>link bookmark</h3><br>
+    <p><a href="#C1">Jump to Chapter 1</a></p>
+    <p><a href="#C5">Jump to Chapter 5</a></p>
+    <p><a href="#C10">Jump to Chapter 10</a></p>
+    <!-- lompat ke web page lainnya -->
+    <p><a href="html_demo.html#C4">Jump to Chapter 4 (JANGAN DIPENCET!)</a></p>
+    <!-- memberi "id" pada tag element -->
+    <h3 id="C1">Chapter 1</h3>
+    <p>This chapter explains ba bla bla</p>
+    <h3 id="C2">Chapter 2</h3>
+    <p>This chapter explains ba bla bla</p>
+    <h3 id="C3">Chapter 3</h3>
+    <p>This chapter explains ba bla bla</p>
+    <h3 id="C4">Chapter 4</h3>
+    <p>This chapter explains ba bla bla</p>
+    <h3 id="C5">Chapter 5</h3>
+    <p>This chapter explains ba bla bla</p>
+    <h3 id="C6">Chapter 6</h3>
+    <p>This chapter explains ba bla bla</p>
+    <h3 id="C7">Chapter 7</h3>
+    <p>This chapter explains ba bla bla</p>
+    <h3 id="C8">Chapter 8</h3>
+    <p>This chapter explains ba bla bla</p>
+    <h3 id="C9">Chapter 9</h3>
+    <p>This chapter explains ba bla bla</p>
+    <h3 id="C10">Chapter 10</h3>
+    <p>This chapter explains ba bla bla</p>
+    <br>
+    <hr><br>
+    <!-- memasang GIF -->
+    <h3>put GIFs</h3>
+    <p>animasi GIF: </p>
+    <img src="https://i.gifer.com/8Qyh.gif" alt="" style="width: 150px; height: 150px;">
+    <br>
+    <hr><br>
+    <!-- image FLOATING -->
+    <h3>image floating</h3>
+    <p><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif" alt=""
+            style="float: right; width: 50px; height: 50px;">image floating right side:: </p>
+    <p><img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif" alt=""
+            style="float: left; width: 50px; height: 50px;"> ::image floating left side</p>
+    <br>
+    <hr><br>
+    <!-- memberi background gambar untuk teks -->
+    <h3>image background for text</h3>
+    <p style="background-image: url('./pictures/kitty.jpeg'); 
+        height: 300px; width: 300px; text-align: center; color: red;">
+        memberikan background gambar pada teks.
+    </p>
+    <br>
+    <hr><br>
+    <!-- mengubah gambar setiap kali ukuran browser berubah -->
+    <h3>the picture element</h3>
+    <p>the picture element, coba resize browsernya.</p>
+    <picture>
+        <source media="(min-width: 950px)" srcset="../JAVASCRIPT/latihan/img/webi.jpg">
+        <source media="(min-width: 650px)" srcset="../JAVASCRIPT/latihan/img/diani.jpg">
+        <source media="(min-width: 350px)" srcset="../JAVASCRIPT/latihan/img/bila.jpg">
+        <img src=" ./pictures/trial.jpeg" alt="ini gambar">
+    </picture>
+    <br>
+    <hr><br>
+    <!-- membuat table  -->
+    <h3>table</h3>
+    <table style="width: 60%;">
+        <tr>
+            <th>nama</th>
+            <th>ttl</th>
+            <th>hobi</th>
+        </tr>
+        <tr>
+            <td>hanendyo</td>
+            <td>Sukorhajo, 10 Juli 1996</td>
+            <td>futsal</td>
+        </tr>
+        <tr>
+            <td>Aryani</td>
+            <td>sukoharjo, 2 maret 94</td>
+            <td>Masak</td>
+        </tr>
+    </table>
+    <br>
+    <hr><br>
+    <!-- cell mengambil(merge) banyak kolom -->
+    <h3>table formatting (coloumn, row)</h3>
+    <table style="width: 100%;" id="t1">
+        <tr>
+            <th>nama</th>
+            <th colspan="2">nomer telepon (cell mengambil 2 coloumn)</th>
+        </tr>
+        <tr>
+            <td>Hanendyo</td>
+            <td>08563192535</td>
+            <td>081289205660</td>
+        </tr>
+        <tr>
+            <td>Hanendyo</td>
+            <td>08563192535</td>
+            <td>081289205660</td>
+        </tr>
+        <tr>
+            <td>Hanendyo</td>
+            <td>08563192535</td>
+            <td>081289205660</td>
+        </tr>
+
+    </table>
+    <br>
+    <hr><br>
+    <!-- cell mengambil(merge) banyak row -->
+    <table style="width: 100%;" id="t2">
+        <caption><b>identitas</b> (ini 'caption')</caption>
+        <tr>
+            <th>nama</th>
+            <td>Hanendyo</td>
+        </tr>
+        <tr>
+            <th rowspan="2">nomer telepon (cell mengambil 2 row)</th>
+            <td>08563192535</td>
+        </tr>
+        <tr>
+            <td>081289205660</td>
+        </tr>
+    </table>
+    <br>
+    <hr><br>
+    <!-- menggabungkan colspan & rowspan -->
+    <h3>menggabungkan colspan & rowspan </h3>
+    <table border="1" cellspacing='0' cellpadding='5'>
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+            <td>1,4</td>
+        </tr>
+        <tr>
+            <td>2,1</td>
+            <td colspan="2" rowspan="2">colrowspan 2</td>
+            <!-- <td>2,2</td> -->
+            <!-- <td>2,3</td> -->
+            <td>2,4</td>
+        </tr>
+        <tr>
+            <td>3,1</td>
+
+            <!-- <td>3,2</td> -->
+            <!-- <td>3,3</td> -->
+            <td>3,4</td>
+        </tr>
+        <tr>
+            <td>4,1</td>
+            <td>4,2</td>
+            <td>4,3</td>
+            <td>4,4</td>
+        </tr>
+    </table>
+    <br>
+    <hr><br>
+    <!-- membuat list -->
+    <!-- unordered list -->
+    <h3>list (unordered list, ordered list, nested list, desc list)</h3>
+    <ul style="list-style-type: square;">
+        <!-- mengubah style list -->
+        <p>unordered list: </p>
+        <li>Anjing</li>
+        <li>Buaya</li>
+        <li>Cicak</li>
+    </ul>
+    <!-- ordered list -->
+    <br>
+
+    <ol type="a">
+        <p>ordered list: </p>
+        <li>Ayu</li>
+        <li>Bayu</li>
+        <li>Camat</li>
+    </ol>
+    <!-- nested list -->
+    <ol>
+        <p>nested list</p>
+        <li>Coffee</li>
+        <li>Tea
+            <ol>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ol>
+        </li>
+        <li>Milk</li>
+    </ol>
+    <!-- description list -->
+    <br>
+    <dl>
+        <p>description list</p>
+        <dt>ukuran Baju:</dt>
+        <dd>-s</dd>
+        <dd>-m</dd>
+        <dd>-l</dd>
+        <dd>-xl</dd>
+        <dt>ukuran sepatu:</dt>
+        <dd>-40</dd>
+        <dd>-41</dd>
+        <dd>-42</dd>
+        <dd>-43</dd>
+    </dl>
+
+    <dl>
+        <dt>Coffee:</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk:</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+    <br>
+    <hr><br>
+    <!-- inline -->
+    <h3>inline:</h3>
+    <p>This is an inline span <span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+    <p>The SPAN element is an inline element, and will not start on a new line and only takes up as much width as
+        necessary.</p>
+    <br>
+    <!-- block -->
+    <h3>block:</h3>
+    <div style="border: 1px solid black">Hello World</div>
+    <p>The DIV element is a block element, and will always start on a new line and take up the full width available
+        (stretches out to the left and right as far as it can).</p>
+    <br>
+    <hr><br>
+    <!-- menggunakan attribute class di JavaScript -->
+    <h2>Use of The class Attribute in JavaScript</h2>
+    <p>Click the button to hide all elements with class name "city":</p>
+
+    <button onclick="myFunction()">Hide elements</button>
+
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+
+    <br>
+    <hr><br>
+    <h2>Difference Between Class and ID</h2>
+    <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within
+        the page:</p>
+
+    <!-- An element with a unique id -->
+    <h1 id="myHeader">My Cities</h1>
+
+    <!-- Multiple elements with same class -->
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <br>
+    <hr><br>
+    <!-- menggunakan attribute id di JavaScript -->
+    <h2>Using The id Attribute in JavaScript</h2>
+    <p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+    <h1 id="myHeader">Hello World!</h1>
+    <button onclick="displayResult()">Change text</button>
+
+    <br>
+    <hr><br>
+    <h1>iframe</h1>
+    <iframe src="demo_iframe.htm" name="iframe_a" height="700px" width="100%" title="Iframe Example"></iframe>
+
+    <p><a href="http://info.cern.ch/" target="iframe_a">Cern</a></p>
+
+    <p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+    <br>
+    <hr><br>
+    <h1>using JAVASCRIPT in(side) HTML</h1>
+    <br>
+    <hr><br>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        click me to display date & time</button>
+    <p id="demo"></p>
+    <br>
+    <hr><br>
+
+    <button type="button" onclick="myFunction2()">click me!</button>
+    <p id="tes">Klik tombol diatas untuk merubah kalimat ini</p>
+
+    <br>
+    <hr><br>
+    <h3>Lampu</h3>
+    <img id="myLampu" src="./pictures/pic_bulboff.gif" alt="" width="100" height="200">
+    <p>
+        <button type="button" onclick="lampu(1)">Light On</button>
+        <button type="button" onclick="lampu(0)">Light Off</button>
+    </p>
+    <script>
+        function lampu(x) {
+            var pic;
+            if (x == 0) {
+                pic = "./pictures/pic_bulboff.gif"
+            }
+            else {
+                pic = "./pictures/pic_bulbon.gif"
+            }
+            document.getElementById("myLampu").src = pic
+        }
+    </script>
+    <br>
+    <hr><br>
+
+    <h3>no script</h3>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+    <p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+
+    <br>
+    <hr><br>
+
+    <h1>The base element</h1>
+
+    <p><img src="images/stickman.gif" width="24" height="39" alt="Stickman"> - Notice that we have only specified a
+        relative address for the image. Since we have specified a base URL in the head section, the browser will look
+        for the image at "https://www.w3schools.com/images/stickman.gif".</p>
+
+    <p><a href="sql/default.asp">Sql tutorial link</a> - Notice that the link opens in a new window, even if it has no
+        target="_blank" attribute. This is because the target attribute of the base element is set to "_blank".</p>
+
+    <br>
+    <hr><br>
+
+    <h1>layout element</h1>
+    <header>
+        <h2>EL-CLASICO</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#bar">Barcelona</a></li>
+                <li><a href="#real">Real Madrid</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h3 id='bar'>Barcelona</h3>
+            <p>Futbol Club Barcelona (Catalan pronunciation: [fubˈbɔl ˈklub bəɾsəˈlonə] (About this soundlisten)),
+                commonly referred to as Barcelona and colloquially known as Barça ([ˈbaɾsə]), is a Spanish professional
+                football club based in Barcelona, Catalonia, Spain.</p>
+            <p>
+                Founded in 1899 by a group of Swiss, Spanish, English, and Catalan footballers led by Joan Gamper, the
+                club has become a symbol of Catalan culture and Catalanism, hence the motto "Més que un club" ("More
+                than a club"). Unlike many other football clubs, the supporters own and operate Barcelona. It is the
+                fourth-most valuable sports team in the world, worth $4.06 billion, and the world's richest football
+                club in terms of revenue, with an annual turnover of €840,8 million.[2][3] The official Barcelona anthem
+                is the "Cant del Barça", written by Jaume Picas and Josep Maria Espinàs.[4] </p>
+            <br>
+            <h3 id='real'>Real Madrid</h3>
+            <p>Real Madrid Club de Fútbol (Spanish pronunciation: [reˈal maˈðɾið ˈkluβ ðe ˈfuðβol] (About this
+                soundlisten), meaning Royal Madrid Football Club), commonly referred to as Real Madrid, is a Spanish
+                professional football club based in Madrid. </p>
+            <p>
+                Founded on 6 March 1902 as Madrid Football Club, the club has traditionally worn a white home kit since
+                inception. The word real is Spanish for "royal" and was bestowed to the club by King Alfonso XIII in
+                1920 together with the royal crown in the emblem. The team has played its home matches in the
+                81,044-capacity Santiago Bernabéu Stadium in downtown Madrid since 1947. Unlike most European sporting
+                entities, Real Madrid's members (socios) have owned and operated the club throughout its history. </p>
+        </article>
+    </section>
+
+    <footer>
+        <p>footer</p>
+    </footer>
+
+    <br>
+    <hr><br>
+
+    <h3>Responsive Text</h3>
+
+    <h1 style="font-size:8vw;">Responsive Text</h1>
+
+    <p style="font-size:3vw;">Resize the browser window to see how the text size scales.</p>
+
+    <p style="font-size:3vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport
+        width.</p>
+
+    <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+    <br>
+    <hr><br>
+
+    <h2>Media Queries</h2>
+    <p>Resize the browser window.</p>
+
+    <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+
+    <div class='ngambang'>
+        <div class="kiri">
+            <p>Left Menu</p>
+        </div>
+
+        <div class="tengah">
+            <p>Main Content</p>
+        </div>
+
+        <div class="kanan">
+            <p>Right Content</p>
+        </div>
+    </div>
+
+
+
+    <br>
+    <hr><br>
+
+
+    <h2>Text Input Fields</h2>
+    <form action="">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br>
+    </form>
+
+
+    <br>
+    <hr><br>
+
+    <h2>Radio Buttons</h2>
+    <form>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+    </form>
+
+    <br>
+    <hr><br>
+
+    <h2>Checkboxes</h2>
+    <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br><br>
+    </form>
+
+    <br>
+    <hr><br>
+
+    <h2>HTML Forms</h2>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+    <br>
+    <hr><br>
+
+    <h2>The method Attribute</h2>
+
+    <p>This form will be submitted using the GET method:</p>
+
+    <form action="/action_page.php" target="_blank" method="get">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>After you submit, notice that the form values is visible in the address bar of the new browser tab.</p>
+
+    <br>
+    <hr><br>
+
+    <h2>The method Attribute</h2>
+
+    <p>This form will be submitted using the POST method:</p>
+
+    <form action="/action_page.php" target="_blank" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>After you submit, notice that, unlike the GET method, the form values is NOT visible in the address bar of the
+        new browser tab.</p>
+
+
+    <br>
+    <hr><br>
+
+    <h2>The button Element</h2>
+
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+
+    <br>
+    <hr><br>
+
+    <h2>The fieldset and legend Elements</h2>
+
+    <form action="">
+        <fieldset>
+            <legend>
+                <h1 style="text-align: center;">Kirimkan Pesan</h1>
+            </legend>
+            <label for="nama">Nama:</label> <br>
+            <input type="text" id="nama"> <br>
+            <label for="email">Email:</label> <br>
+            <input type="text" id="email"> <br>
+
+            <br><br>
+
+            <label for="">Jenis Kelamin:</label>
+            <input type="radio" id="pria">
+            <label for="pria">Pria</label>
+            <input type="radio" id="wanita">
+            <label for="wanita">Wanita</label>
+
+            <br><br>
+
+            <label for="">Pesan Anda:</label><br>
+            <textarea name="txtarea" id="txtarea" cols="30" rows="10"></textarea>
+
+            <br><br>
+
+            <input type="submit" value="kirim">
+        </fieldset>
+    </form>
+
+
+    <br>
+    <hr><br>
+
+    <h2>The Datalist Element</h2>
+    <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+    <form action="">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="">Microsoft Edge</option>
+            <option value="">Mozilla Firefox</option>
+            <option value="">Google Chrome</option>
+            <option value="">Opera</option>
+            <option value="">Safari</option>
+        </datalist>
+        <input type="submit">
+    </form>
+
+    <p><b>Note:</b> The datalist tag is not supported in Safari prior version 12.1.</p>
+
+
+    <br>
+    <hr><br>
+
+    <h2>The output Element</h2>
+    <p>The output element represents the result of a calculation.</p>
+
+    <form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b">50</output>
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <p><strong>Note:</strong> The output element is not supported in Edge prior version 13.</p>
+
+
+    <br>
+    <hr><br>
+
+</body>
+
+<script>
+    function myFunction() {
+        var x = document.querySelectorAll(".city");
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+
+        }
+    }
+
+    function myFunction2() {
+        document.getElementById("tes").innerHTML = "Assalamualaikum"
+        document.getElementById("tes").style.color = "red"
+        document.getElementById("tes").style.backgroundColor = "yellow"
+        document.getElementById("tes").style.fontSize = "50px"
+    }
+
+    function displayResult() {
+        document.getElementById("myHeader").innerHTML = "Have a nice day!";
+    }
+
+</script>
+
+</html>
+
+<!-- 
+note:
+
+1. element
+-<html> 	Defines the root of an HTML document
+-<body> 	Defines the document's body
+-<h1> to <h6> 	Defines HTML headings
+
+2. attribute
+-All HTML elements can have attributes
+-The href attribute of <a> specifies the URL of the page the link goes to
+-The src attribute of <img> specifies the path to the image to be displayed
+-The width and height attributes of <img> provide size information for images
+-The alt attribute of <img> provides an alternate text for an image
+-The style attribute is used to add styles to an element, such as color, font, size, and more
+-The lang attribute of the <html> tag declares the language of the Web page
+-The title attribute defines some extra information about an element
+
+3. headings
+-<html> 	Defines the root of an HTML document
+-<body> 	Defines the document's body
+-<h1> to <h6> 	Defines HTML headings
+
+4. paragraph
+-<p> 	Defines a paragraph
+-<hr> 	Defines a thematic change in the content
+-<br> 	Inserts a single line break
+-<pre> 	Defines pre-formatted text
+
+5. styles
+-Use the "style" attribute for styling HTML elements
+-Use "background-color" for background color
+-Use "color" for text colors
+-Use "font-family" for text fonts
+-Use "font-size" for text sizes
+-Use "text-align" for text alignment 
+
+6. formatting
+-<b> 	Defines bold text
+-<em> 	Defines emphasized text 
+-<i> 	Defines a part of text in an alternate voice or mood
+-<small> 	Defines smaller text
+-<strong> 	Defines important text
+-<sub> 	Defines subscripted text
+-<sup> 	Defines superscripted text
+-<ins> 	Defines inserted text
+-<del> 	Defines deleted text
+-<mark> 	Defines marked/highlighted text
+
+7. quotations
+-<abbr> 	Defines an abbreviation or acronym
+-<address> 	Defines contact information for the author/owner of a document
+-<bdo> 	Defines the text direction
+-<blockquote> 	Defines a section that is quoted from another source
+-<cite> 	Defines the title of a work
+-<q> 	Defines a short inline quotation
+
+8. color
+a. RGB Color Values.
+In HTML, a color can be specified as an RGB value, using this formula:
+rgb(red, green, blue)
+-Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.
+-This means that there are 256 x 256 x 256 = 16777216 possible colors!
+-For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255), and the other two (green and blue) are set to 0.
+-Another example, rgb(0, 255, 0) is displayed as green, because green is set to its highest value (255), and the other two (red and blue) are set to 0.
+-To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+-To display white, set all color parameters to 255, like this: rgb(255, 255, 255). 
+
+b. HEX Color Values.
+In HTML, a color can be specified using a hexadecimal value in the form:
+#rrggbb
+-Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+-For example, #ff0000 is displayed as red, because red is set to its highest value (ff), and the other two (green and blue) are set to 00.
+-Another example, #00ff00 is displayed as green, because green is set to its highest value (ff), and the other two (red and blue) are set to 00.
+-To display black, set all color parameters to 00, like this: #000000.
+-To display white, set all color parameters to ff, like this: #ffffff. 
+
+c. HSL Color Values
+In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:
+hsl(hue, saturation, lightness)
+-Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+-Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+-Lightness is also a percentage value, 0% is black, and 100% is white.
+
+9. html css
+-Use the HTML style attribute for inline styling
+-Use the HTML <style> element to define internal CSS
+-Use the HTML <link> element to refer to an external CSS file
+-Use the HTML <head> element to store <style> and <link> elements
+-Use the CSS "color" property for text colors
+-Use the CSS "font-family" property for text fonts
+-Use the CSS "font-size" property for text sizes
+-Use the CSS "border"property for borders
+-Use the CSS "padding" property for space inside the border
+-Use the CSS "margin" property for space outside the border
+
+10. Links
+-Use the <a> element to define a link
+-Use the href attribute to define the link address
+-Use the target attribute to define where to open the linked document
+-Use the <img> element (inside <a>) to use an image as a link
+-Use the mailto: scheme inside the href attribute to create a link that opens the user's email program
+
+11. images
+-Use the HTML <img> element to define an image
+-Use the HTML src attribute to define the URL of the image
+-Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+-Use the HTML width and height attributes or the CSS width and height properties to define the size of the image
+-Use the CSS float property to let the image float to the left or to the right
+-<img> 	Defines an image
+-<map> 	Defines an image map
+-<area> 	Defines a clickable area inside an image map
+-<picture> 	Defines a container for multiple image resources
+
+12. table    
+-Use the HTML <table> element to define a table
+-Use the HTML <tr> element to define a table row
+-Use the HTML <td> element to define a table data
+-Use the HTML <th> element to define a table heading
+-<colgroup> Specifies a group of one or more columns in a table for formatting
+-<col> Specifies column properties for each column within a <colgroup> element
+-<thead> Groups the header content in a table
+-<tbody> Groups the body content in a table
+-<tfoot> Groups the footer content in a table
+-Use the HTML <caption> element to define a table caption
+-Use the CSS "border" property to define a border
+-Use the CSS "border-collapse" property to collapse cell borders
+-Use the CSS "padding property" to add padding to cells
+-Use the CSS "text-align" property to align cell text
+-Use the CSS "border-spacing" property to set the spacing between cells
+-Use the "colspan" attribute to make a cell span many columns
+-Use the "rowspan" attribute to make a cell span many rows
+-Use the "id" attribute to uniquely define one table
+
+13. list
+-<ul> Defines an unordered list
+-<ol> Defines an ordered list
+-<li> Defines a list item
+-<dl> Defines a description list
+-<dt> Defines a term in a description list
+-<dd> Describes the term in a description list
+
+
+14. block & inline
+-Here are the block-level elements in HTML:
+<address>  <article>  <aside>     <blockquote>  <canvas>  <dd>      <div>
+<dl>       <dt>       <fieldset>  <figcaption>  <figure>  <footer>  <form>  
+<h1>-<h6>  <header>   <hr>        <li>          <main>    <nav>     <noscript>  
+<p>        <pre>      <section>   <table>       <tfoot>   <ul>      <video>
+<ol>
+
+-Here are the inline elements in HTML:
+<a>       <abbr>    <acronym>   <b>       <var>
+<bdo>     <big>     <br>        <button>  <cite>    <code>
+<dfn>     <em>      <i>         <img>     <input>   <kbd>
+<label>   <map>     <object>    <output>  <q>       <samp>
+<script>  <select>  <small>     <span>    <strong>  
+<sub>     <sup>     <textarea>  <time>    <tt>   
+    
+15. html classes
+-The HTML class attribute specifies one or more class names for an element
+-Classes are used by CSS and JavaScript to select and access specific elements
+-The class attribute can be used on any HTML element
+-The class name is case sensitive
+-Different HTML elements can point to the same class name
+-JavaScript can access elements with a specific class name with the getElementsByClassName() method
+
+16. html id
+-The id attribute is used to specify a unique id for an HTML element-
+-The value of the id attribute must be unique within the HTML document
+-The id attribute is used by CSS and JavaScript to style/select a specific element
+-The value of the id attribute is case sensitive
+-The id attribute is also used to create HTML bookmarks
+-JavaScript can access an element with a specific id with the getElementById() method
+
+17. iframe
+-The HTML <iframe> tag specifies an inline frame
+-The src attribute defines the URL of the page to embed
+-Always include a title attribute (for screen readers)
+-The height and width attributes specifies the size of the iframe
+-Use border:none; to remove the border around the iframe
+
+18. html head
+-The <head> element is a container for metadata (data about data)
+-The <head> element is placed between the <html> tag and the <body> tag
+-The <title> element is required and it defines the title of the document
+-The <style> element is used to define style information for a single document
+-The <link> tag is most often used to link to external style sheets
+-The <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings
+-The <script> element is used to define client-side JavaScripts
+-The <base> element specifies the base URL and/or target for all relative URLs in a page
+
+19. html computercode
+-The <kbd> element is used to define keyboard input
+-The <samp> element is used to define sample output from a computer program
+-The <code> element  is used to define a piece of computer code
+-The <var> element  is used to defines a variable in programming or in a mathematical expression
+-The <pre> element is used to define preformatted text
+
+ 
+20. html form
+-accept-charset: 	Specifies the character encodings used for form submission
+-action: 	        Specifies where to send the form-data when a form is submitted
+-autocomplete: 	    Specifies whether a form should have autocomplete on or off
+-enctype: 	        Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+-method: 	        Specifies the HTTP method to use when sending form-data
+-name: 	            Specifies the name of the form
+-novalidate: 	    Specifies that the form should not be validated when submitted
+-rel: 	            Specifies the relationship between a linked resource and the current document
+-target: 	        Specifies where to display the response that is received after submitting the form 
+
+21. html form element
+-<form> 	    Defines an HTML form for user input
+-<input> 	Defines an input control
+-<textarea> 	Defines a multiline input control (text area)
+-<label> 	Defines a label for an <input> element
+-<fieldset> 	Groups related elements in a form
+-<legend> 	Defines a caption for a <fieldset> element
+-<select> 	Defines a drop-down list
+-<optgroup> 	Defines a group of related options in a drop-down list
+-<option> 	Defines an option in a drop-down list
+-<button> 	Defines a clickable button
+-<datalist> 	Specifies a list of pre-defined options for input controls
+-<output> 	Defines the result of a calculation
+
+
+
+-->
+
+<!-- after learning css -->
+<!-- horizontal list -->
+<!-- <ul class="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#about">About</a></li>
+    </ul> -->

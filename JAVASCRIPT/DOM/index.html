@@ -1,0 +1,177 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dom Selection</title>
+    <style>
+        * {
+            border: 2px solid #dedede;
+            padding: 15px;
+            margin: 15px;
+        }
+
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            max-width: 600px;
+            margin: 30px auto;
+            font-family: sans-serif;
+            color: #333;
+        }
+
+
+
+        /* section#b ul li:nth-child(2) {
+            background-color: red;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <h1 id="judul">Hello World1</h1>
+    <h1 id="j">Hello World2</h1>
+    <h1 id="ju">Hello World3</h1>
+    <h1 id="jud">Hello World4</h1>
+    <div id="container">
+        <section id="a">
+            <p class="p1">paragraf 1</p>
+            <a href="http://instagram.com/sandhikagalih">Instagram Sandhika Galih</a>
+            <p class="p2">paragraf 2</p>
+            <p class="p3">paragraf 3</p>
+        </section>
+        <section id="b">
+            <p>paragraf 4</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="./testOnly.js"></script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Traversal</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+        body {
+            margin: 50px;
+            font-family: arial;
+            background-color: #666;
+        }
+
+        .container {
+            width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            display: inline-block;
+            width: 220px;
+            padding: 0 80px;
+            height: 80px;
+            font-size: 16px;
+            line-height: 80px;
+            border-radius: 40px;
+            background-color: #f1f1f1;
+            margin: 20px;
+            position: relative;
+            text-align: center;
+        }
+
+        .card img {
+            float: left;
+            margin: 0 10px 0 -80px;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .card .nama,
+        .card .telp {
+            display: block;
+            line-height: 20px;
+            padding: 0 5px;
+        }
+
+        .card .nama {
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        .card .telp {
+            margin-left: 20px;
+            margin-top: 5px;
+            font-size: 16px;
+            color: #aaa;
+        }
+
+        .card .close {
+            font-size: 24px;
+            font-weight: bold;
+            color: #999;
+            position: absolute;
+            top: 0;
+            right: 30px;
+            cursor: pointer;
+        }
+
+        .card:hover .close {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="../latihan/img/webi.jpg" width="96" height="96">
+            <span class="nama">Wafa Nabilah</span>
+            <span class="telp">081111111111</span>
+            <!-- <a href="" class='close'>x</a> -->
+            <span class="close">×</span>
+        </div>
+        <div class="card">
+            <img src="../latihan/img/diani.jpg" width="96" height="96">
+            <span class="nama">Diyanah Fitria</span>
+            <span class="telp">082222222222</span>
+            <!-- <a href="" class='close'>x</a> -->
+            <span class="close">×</span>
+        </div>
+        <div class="card">
+            <img src="../latihan/img/bila.jpg" width="96" height="96">
+            <span class="nama">Fida Nabila</span>
+            <span class="telp">083333333333</span>
+            <!-- <a href="" class='close'>x</a> -->
+            <span class="close">×</span>
+        </div>
+        <div class="card">
+            <img src="../latihan/img/maeng.jpg" width="96" height="96">
+            <span class="nama">Rima Sabrina</span>
+            <span class="telp">084444444444</span>
+            <!-- <a href="" class='close'>x</a> -->
+            <span class="close">×</span>
+        </div>
+
+    </div>
+
+    <script src="./testOnly.js"></script>
+</body>
+
+</html>

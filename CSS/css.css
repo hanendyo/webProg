@@ -1,0 +1,799 @@
+/* 
+CSS RESET
+untuk menghilangkan margin padding pada body.
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*  */
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+/*  */
+
+
+/* 
+FONT STYLING
+
+font-family = jenis font
+font-size = ukuran font
+font-weight = ketebalan font
+font-variant = mengubah font menjadi small caps
+font-style = mengubah font menjadi miring
+line-height =  mengatur spasi antar baris
+shorthand --> font: (1. font-style: optional)(2. font-variant: optional)(3. font-weight: optional)
+                    (4. font-size: wajib)/(5.font-heigth: optional)(6. font-family: wajib);
+--(/) tambahkan slash jika pake line-height
+*/
+
+.font-family {
+    font-family: Arial, verdana, sans-serif;
+
+    /* font-family: arial, verdana --> (nama font), sans-serif; --> (generic family)
+    --jika parameter lebih dari 1 berarti html bisa memilih lebih dari 1 opsi font. */
+    
+}
+
+.font-size{
+    font-size: 30px;
+}
+
+.font-weight{
+    font-weight: lighter;
+}
+
+.font-variant{
+    font-variant: small-caps;
+/* --mengubah huruf kecil menjadi kapital, dan kapital awalnya menjadi semakin besar. */
+
+}
+
+.font-style {
+    font-style: italic;
+}
+
+.line-height {
+    line-height: 50px;
+}
+
+.shorthand{
+    font: italic normal bold 16px/18px arial, sans-serif;
+}
+
+
+/* 
+TEXT STYLING 
+
+color = warna pada teks
+text-align = mengatur format teks
+text-indent = memberi indentasi pada teks
+text-decoration = mengatur dekorasi pada teks
+text-transform = mengubah jenis huruf menjadi besar (kapital) & kecil 
+*/
+.color{
+    color: coral;
+    /* 
+    rgb(0,0,0) 
+    #fff000
+    */
+}
+
+.text-align{
+    text-align: center;
+    /* 
+    left, right, center, justify
+    untuk rata tengahkan sebuah paragraf, gunakan justify 
+    */
+}
+
+.text-indent{
+    text-indent: 30px;
+}
+
+.text-decoration{
+    text-decoration: line-through;
+    /* 
+    none, underline(bawah tulisan), overline(atas tulisan), line-through (ditengah)
+    */
+}
+
+.text-transform{
+    text-transform: uppercase;
+    /* 
+    none, lowercase, uppercase, capitalize
+    */
+}
+
+.letter-spacing{
+    letter-spacing: 5px;
+    /* normal */
+}
+
+.word-spacing{
+    word-spacing: 10px;
+    /* normal */
+}
+
+/* 
+BACKGROUND
+
+background-color = warna bekgron pada teks
+background-image = memberi image pada background
+background-position = menentukan posisi background
+background-repeat = looping background terhadap sumbu x atau y
+shorthand = background: color url() position repeat;
+*/
+
+ .bekgron{
+     background-color: rgb(206, 178, 178);
+     border: 1px black solid;
+ }
+
+ .background-color {
+     background-color: burlywood;
+ }
+
+ .background-image{
+     background-image: url(./img/bush.png);
+ }
+
+
+.background-position {
+    background-image: url(./img/diani.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    /* 
+    kombinasi posisi:
+    -top/center/bottom
+    -left/center/right
+    */
+}
+
+ .background-repeat{
+     background-image: url(./img/webi.jpg);
+     background-repeat: repeat-x;
+     /*
+      repeat-y
+      no-repeat
+      */
+ }
+
+ .shorthandBackground{
+    background: lightgreen url(./img/bush.png) center center no-repeat
+ }
+
+
+ /* 
+    SELECTOR
+
+    elemen/tag HTML = men-select berdasarkan elemen/tag HTML. contoh: h1{}, p{}, body{}, dll
+    id = men-select berdasarkan id pada elemen HTML contoh: #idElemenHtml{} (pakai hashtag #)
+    class = men-select berdasarkan class pada elemen HTML contoh: .classElemenHtml{} (pakai titik .) 
+*/
+
+#selector-id{
+    font: italic small-caps lighter  20px/30px Arial;
+    background: lightgreen url(./img/webi.jpg) center center no-repeat;
+
+}
+
+.selector-class{
+    font: normal small-caps bold 20px/30px 'Trebuchet Ms';
+    background: lightslategrey url(./img/diani.jpg) center center no-repeat; 
+}
+
+.secondClass {
+    text-transform: capitalize;
+    /* 
+    untuk lebih spesifik gunakan tag htmlnya juga. contoh: h3.secondClass{}
+    */
+}
+
+
+/*  */
+/* menggunakan spasi untuk spesifikasi */
+/* ul li a { */
+/* dibaca: tolong carikan <a> di dalam <li> di dalam <ul> */
+/* color: lightcoral; */
+/* } */
+/* ol li a { */
+/* dibaca: tolong carikan <a> di dalam <li> di dalam <ol> */
+/* color: grey */
+}
+/* 
+menggunakan koma (,) untuk style yg sama
+h1, h2, h3 {
+    (dibaca: tolong select <h1>, <h2>, dan <h3>)
+    color: red;
+}
+*/
+
+
+/* 
+PSEUDO CLASS = kelas semu yg mendefinisikan style pada KEADAAN TERTENTU
+
+@@
+LINK:
+:link = style default link
+:hover = style ketika link dihover
+:active = style ketika link diklik
+:visited = style ketika link sudah pernah dikunjungi
+@@
+:first-child = memelih elemen pertama dari parentnya
+:last-child = memilih elemen terakhir dari parentnya
+:nth-child(n) = memilih elemen ke-n dari parentnya
+:first-of-type = memilih elemen pertama dari sebuah elemen
+:last-of-type = memilih elemen terakhir dari sebuah elemen
+@@
+:inherit = menurunkan css property value  dari parentnya
+*/
+
+
+ .hover:hover{
+    font-size: 30px;
+    color: orange;
+}
+
+.active:active{
+    background-color: palegreen;
+    color: red;
+}
+
+.visited:visited{
+    color: red;
+}
+
+ol.pseudo li:first-child a{
+    background-color: lightcoral;
+    font-size: 20px;
+}
+ol.pseudo li:last-child a{
+    background-color: lightskyblue;
+    font-size: 20px;
+}
+
+ol.pseudo li:nth-child(3n-2) a{
+    /* 
+    urutan: 1, 2, 3, dst
+    pola: 2n, 3n-2, 4n+1
+    ganjil: odd
+    genap: even
+    */
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bolder;
+    background-color: lightcoral;
+}
+
+h4:first-of-type {
+    color: lightcoral;
+    font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h4:last-of-type{
+    color: lightseagreen ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+fieldset.contoh {
+    color: lightgray;
+}
+
+fieldset.contoh a{
+    /* color <a> mengikuti parentnya yaitu <fieldset> */
+    color: inherit ;
+}
+
+
+/* 
+DIMENSI % OVERFLOW
+
+dimensi::
+persen(%): relatif terhadap parent pembungkusnya
+pixel(px): absolut
+::
+
+overflow::
+visible: jika ada konten yg keluar ata berlebih dari parentnya, tetap akan diperlihatkan.
+auto: otomatis menambahkan 'scroll' jika kontennya berlebih.
+hidden: menyembunyikan konten yang berlebih.
+scroll: menambahkan 'scroll' biarpun kontennya banyak atau tidak.
+::
+
+*/
+.dimensi1 {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+}
+
+.dimensi2 {
+    width: 80%;
+    background-color: lightgreen;
+
+}
+
+.visible{
+    width: 300px;
+    height: 100px;
+    background-color: lightskyblue;
+    overflow: visible;
+
+    /* oot */
+    margin-bottom: 120px;
+}
+
+.auto{
+    width: 300px;
+    height: 200px;
+    background-color: lightseagreen;
+    overflow: auto;
+
+}
+
+.hidden{
+    width: 300px;
+    height: 155px;
+    background-color: lightyellow;
+    overflow: hidden;
+
+}
+
+.scroll {
+    width: 300px;
+    height: 200px;
+    background-color: lightslategray;
+    overflow: auto;
+}
+
+
+
+
+/* 
+CSS BOX MODEL
+
+margin: area transparan di sekitar kotak (di luar border)
+padding: area transparan di dalam kotak (antara content dan border) 
+border: batas di sekeliling content dan padding
+content: content sebenarnya di dalam box, bisa berupa teks atau gambar
+
+MARGIN:
+overlapping margin: vertical: margin paling besar yg dipilih, 
+                    horizontal: 2 margin dijumlahkan.
+negative margin:    vertical: elemen1(marginBottom: 100px) + elemen2(marginTop: -50px) == 50px, 
+                    elemen2 masuk kedalam elemen1 sebanyak 50px
+auto:               khusus untuk margin left & right (biasanya biar kontennya ada di tengah)
+shorthand:          1 value: semua sisi
+                    2 value: (top & bottom) (left & right)
+                    3 value: (top) (left & right) (bottom)
+                    4 value: (top) (right) (bottom) (left) --> clockwise
+                    contoh. margin: 10px auto 20px (3 value)
+*/
+
+/* MARGIN */
+.marginVer1{
+width: 150px;
+height: 150px;
+background-color: lightcoral;
+margin-left: 100px;
+margin-top: 30px;
+margin-right: 50px;
+margin-bottom: 100px;
+}
+.marginVer2{
+width: 100px;
+height: 100px;
+background-color: lightgreen;
+}
+.marginVer3{
+width: 50px;
+height: 50px;
+background-color: lightskyblue;
+}
+.marginVerNeg1{
+width: 150px;
+height: 150px;
+background-color: lightcoral;
+margin-bottom: 50px;
+}
+.marginVerNeg2{
+width: 100px;
+height: 100px;
+background-color: lightgreen;
+margin-top: -100px;
+}
+.marginVerNeg3{
+width: 50px;
+height: 50px;
+background-color: lightskyblue;
+}
+
+/* horizontal */
+.horizontal {
+    display: flex;
+}
+.horizontal div{
+    display: inline-block;
+}
+.marginHor1{
+width: 150px;
+height: 150px;
+background-color: lightcoral;
+margin-right: 30px;
+}
+.marginHor2{
+width: 100px;
+height: 100px;
+background-color: lightgreen;
+margin-left: 20px;
+}
+.marginHor3{
+width: 50px;
+height: 50px;
+background-color: lightskyblue;
+}
+.horizontalNegative{
+    display: flex;
+}
+.horizontalNegative div{
+    display: inline-block;
+}
+.marginHorNeg1{
+    width: 150px;
+    height: 150px;
+    background-color: lightcoral;
+    margin-right: 100;
+    }
+    .marginHorNeg2{
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin-left: -50px;
+    }
+    .marginHorNeg3{
+    width: 50px;
+    height: 50px;
+    background-color: lightskyblue;
+    }
+
+    .verticalAuto{
+        
+    }
+    .marginVerAuto1{
+        width: 150px;
+        height: 150px;
+        background-color: lightcoral;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .marginVerAuto2{
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .marginVerAuto3{
+        width: 50px;
+        height: 50px;
+        background-color: lightskyblue;
+        margin-left: auto;
+        margin-right: auto;
+        }
+/*  */
+
+/* 
+PADDING
+tidak ada minus atau auto untuk value padding.
+value padding akan mempengaruhi ukuran sebuah 'box', 
+    jika sebuah box mempunyai width dan height sebanyak 100px,
+        dan kita menambahkan padding 50px (all side),
+            maka width dan heightnya akan menjadi 200px. 
+*/
+
+
+.padding{
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 10px ;
+    padding: 50px;
+}
+/*  */
+
+/* 
+BORDER
+border: 2px solid black; (width, style, color;)
+style:  1. dotted
+        2. dashed
+        3. double
+        4. solid
+
+border juga merubah ukuran box!
+*/
+
+.border{
+    display: inline-flex;
+}
+.borderSolid{
+ border: 3px solid black;
+
+ /* oot */
+ width: 100px;
+ height: 100px;
+ background-color: lightsteelblue;
+ margin: 10px;
+ padding: 10px;
+}
+.borderDotted{
+ border: 3px dotted red;
+
+ /* oot */
+ width: 100px;
+ height: 100px;
+ background-color: lightsteelblue;
+ margin: 10px;
+ padding: 10px;
+}
+.borderDashed{
+ border: 3px dashed green;
+
+ /* oot */
+ width: 100px;
+ height: 100px;
+ background-color: lightsteelblue;
+ margin: 10px;
+ padding: 10px;
+}
+.borderDouble{
+ border: 3px double yellow;
+
+ /* oot */
+ width: 100px;
+ height: 100px;
+ background-color: lightsteelblue;
+ margin: 10px;
+ padding: 10px;
+}
+/*  */
+
+/* 
+BOX-SIZING
+membuat size dari sebuah box tidak berubah ketika diberi padding dan border
+*/
+
+.boxSizing {
+box-sizing: border-box;
+
+ /* oot */
+ width: 200px;
+ height: 200px;
+ background-color: limegreen;
+ margin: 10px;
+ padding: 10px;
+} 
+/*  */
+
+
+
+
+/* 
+FLOAT
+float: (none left right)
+text wrapping.
+multi-coloumn layer.
+how it works? 
+elemen yg diberi value float, maka akan berpindah dimensi 
+    dan keluar dari dimensi parentnya.
+        maka, elemen setelahnya akan mengambil alih tempat elemen tsb.
+
+fix for float problem:
+1. overflow: auto --> ukuran container akan mengikuti contentnya
+2. clear: (left right both) gunakan div kosong!
+3. microclear fix:
+  For modern browsers
+  1. The space content is one way to avoid an Opera bug when the
+     contenteditable attribute is included anywhere else in the document.
+     Otherwise it causes space to appear at the top and bottom of elements
+     that are clearfixed.
+  2. The use of `table` rather than `block` is only necessary if using
+     `:before` to contain the top-margins of child elements.
+ 
+            /* .cf:before,
+            .cf:after {
+                content: " ";
+                
+                display: table;
+            } */
+            
+            /* .cf:after {
+                clear: both;
+            } */
+ 
+
+    /* For IE 6/7 only
+    Include this rule to trigger hasLayout and contain floats. */
+  
+            /* .cf {
+                *zoom: 1;
+            } */
+
+            /*  */
+
+
+/* float */
+.floatContainer {
+    width: 400px;
+    height: 300px;
+    padding: 5px;
+    border: 1px solid black;  
+    overflow: auto;  
+}
+
+.floatRight, .normal, .floatLeft{
+    width: 100px;
+    height: 100px;
+}
+
+.floatRight{
+    background-color: red;
+    color: white;
+    float: right;
+}
+.normal{
+    background-color: green;
+    color: white;
+}
+.floatLeft{
+    background-color: blue;
+    color: white;
+    float: left;
+}
+/*  */
+
+/* text wrapping */
+.textWrapping{
+    padding: 5px;
+    width: 400px;
+    border: 1px solid black;
+    
+}
+.textWrapping img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+
+    float: left;
+}
+
+.textWrapping p {
+    text-align: justify;
+}
+
+.emptyDiv{
+    clear: left;
+}
+/*  */
+
+/* image gallery */
+.imgfloatLeft{
+    width: 300px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 5px;
+}
+/* .imgFloatRight{
+    width: 300px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 5px;
+} */
+
+.imageGalleryLeft {
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 50px;
+    /* line-height disesuaikan width biar ditengah */
+    margin: 2px;
+    float: left;
+}
+.imageGalleryRight {
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    text-align: center;
+    line-height: 50px;
+    /* line-height disesuaikan width biar ditengah */
+    margin: 2px;
+    float: right;
+}
+.fr{
+    text-align: end;
+}
+
+    /*MICRO CLEAR FIX  */
+    .cf:before, .cf:after {
+    content: " ";
+    display: table;
+    } 
+                
+    .cf:after {
+    clear: both;
+    }
+    /*  */
+
+/* multi-coloumn layout */
+.konte{
+    width: 600px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 5px;
+    /* display: inline-flex; */
+}
+
+.kiri {
+    width: 150px;
+    height: 200px;
+    background-color: lightpink;
+    float: left;
+}
+
+.tengah{
+    width: 300px;
+    height: 200px;
+    background-color: lightgreen;
+    float: left;
+}
+
+.kanan {
+    width: 150px;
+    height: 200px;
+    background-color: lightgrey;
+    float: left;
+}
+/*  */
+
+/*  */
