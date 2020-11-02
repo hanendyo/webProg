@@ -63,11 +63,54 @@ body{
     color: #333;
 }
 
+.topbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 40px;
+    background-color: #dcdcdc;
+    border-bottom: 3px solid lightskyblue;
+    border-top: 3px solid lightcoral;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+
+
 /* container */
 .container{
     width: 960px;
     background-color: #dcdcdc;
-    margin: 0px auto;
+    margin: 85px auto;
+    position: relative;
+
+   
+    /* height: 2000px; */
+}
+/*  */
+
+/* image ribbon */
+.container .twitterRibbon {
+    background-image: url(./pictures/twitterRibbon.png);
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: -50px;
+    right: -10px;
+}
+
+.container .facebookRibbon {
+    background-image: url(./pictures/facebook.png);
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: -50px;
+    right: 70px;
 }
 /*  */
 
@@ -77,7 +120,7 @@ body{
 }
 
 .header .judul{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -105,8 +148,8 @@ body{
    background-position: 0 -30px;
    border-bottom: 5px solid lightskyblue;
    border-top: 5px solid lightcoral;
-   border-right: 5px solid lightskyblue;
-   border-left: 5px solid lightcoral;
+   border-right: 4px solid lightskyblue;
+   border-left: 4px solid lightcoral;
    box-sizing: border-box;
 
 }
@@ -168,7 +211,7 @@ body{
 }
 
 .sidebar .authorContent{
-    font: 12px/17px arial;
+    font: 13px/17px arial;
     color: #333;
 }
 

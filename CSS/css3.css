@@ -1,0 +1,563 @@
+ /* CSS3 */
+ /* 
+ BORDER RADIUS
+ for: menumpulkan ujung dari sebuah box
+ ex:    1. a. border-radius: 20px; --> all in one
+                b. border-radius: 20px 10px 0px 30px --> clockwise from topLeft! 
+        2. a. border-top-left-radius: 20px;
+                b. border-top-right-radius: 20px;
+                    c. border-bottom-right-radius: 20px;
+                        d. border-bottom-left-radius: 20px;
+ */
+
+ .borderRadiusParent {
+     /* display: inline-block; */
+     box-sizing: border-box;
+ }
+
+ .borderRadius{
+    /* main */
+    border-radius: 20px;
+
+    /* sub */
+     width: 200px;
+     height: 200px;
+     background-color: lightcoral;
+     padding-top: 100px;
+     margin-right: 20px;
+     text-align: center;
+     box-sizing: border-box;
+     display: inline-block;
+ }
+ .borderRadiusLingkaran{
+    /* main */
+    border-radius: 50%;
+
+    /* sub */
+     width: 200px;
+     height: 200px;
+     background-color: lightseagreen;
+     padding-top: 100px;
+     margin-right: 20px;
+     text-align: center;
+     box-sizing: border-box;
+     display: inline-block;
+ }
+
+ .borderRadiusCustom {
+        /* main */
+    border-radius: 50% 25% 0 25%  ;
+
+    /* sub */
+     width: 200px;
+     height: 200px;
+     background-color: lightskyblue;
+     padding-top: 100px;
+     margin-right: 20px;
+     text-align: center;
+     box-sizing: border-box;
+     display: inline-block;
+ }
+
+ .borderRadiusImage {
+    /* main */
+    border-radius: 50% 50% 0 50%;
+
+    /* sub */
+     width: 200px;
+     height: 200px;
+     margin-right: 20px;
+     background-image: url(../HTML/pictures/webs2.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: -110px 0;
+     display: inline-block;
+}
+
+.halfCircle {
+    width: 200px;
+    height: 100px; /* as the half of the width */
+    padding-top: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: lightpink;
+    /* border: 10px solid red; */
+    /* border-bottom: 10px solid black; */
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    display: inline-block;
+}
+/*  */
+
+/* 
+OPACITY
+for: membuat ELEMEN menjadi transparant
+        SEDANGKAN RGBa / HSLa membuat BACKGROUND-COLOR / COLOR jadi trans
+ex: opacity: 0.5 --> (value: 0-1)
+
+jika opacity1 mempunyai child yaitu opacity2, 
+    maka opacity2 value opacitynya relatif thdp parentnya.
+        ex: opacity1 value nya 0.5, maka opacity2 valuenya 0.5 DARI 0.5 milik opacity1
+ */
+
+ .opacityParent {
+    width: 300px;
+    height: 200px;
+    background-image: url(./img/bush.png);
+    position: relative;
+ }
+
+ .opacity {
+     /* main */
+    opacity: 0.6;
+    /* sub */
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    position: relative;
+
+ }
+ .opacity2 {
+     /* main */
+     /* 0.5 dari parentnya (0.5 dari 0.5) */
+    opacity: 0.5;
+    /* sub */
+    width: 90px;
+    height: 90px;
+    background-color: green;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+ 
+}
+ .rgbaParent {
+    width: 300px;
+    height: 200px;
+    background-image: url(./img/bush.png);
+    position: relative;
+ }
+
+ /* 
+    RGBa / HSLa membuat BACKGROUND-COLOR / COLOR jadi trans
+        dan membuat child tidak mengikuti transparant parentnya.
+ */
+ .rgba {
+     /* main */
+     background-color: rgba(255, 102, 0, 0.4);
+    /* sub */
+    width: 150px;
+    height: 150px;
+    position: relative;
+
+ }
+ .rgba2 {
+     /* main */
+     /* 0.5 dari parentnya (0.5 dari 0.5) */
+    opacity: 1;
+    /* sub */
+    width: 90px;
+    height: 90px;
+    background-color: green;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+ }
+/*  */
+
+/* 
+ BOX-SHADOW
+ for: mmembuat banyangan pada elemen yang kita buat
+ ex:    box-sizing:(inset: blur kedalam),(x-offset),(y-offset),(blur),(spread: ukuran bayangan),(color)
+
+*/
+
+.tes {
+    position: relative;
+}
+
+
+.box2{
+    /* main */
+    box-shadow: 0px 25px 10px -10px rgba(0,0,0,0.7);
+    /* sub */
+    width: 200px;
+    height: 200px;
+    background-color: lightcyan;
+    margin: 50px auto ;
+    transition: 0.3s;
+    position: absolute;
+    top: 0px;
+}
+.box2:hover {
+    /* main */
+    background-color: lightpink;
+    box-shadow: 0px 45px 10px -20px rgba(0,0,0,0.7);
+    margin-top: 30px;
+}
+
+.box3 {
+    /* main */
+    box-shadow:   10px 15px 20px 0px rgba(255,0,0,0.7), -10px -15px 20px 0px rgba(0, 255,0,0.7);
+
+    /* sub */
+    width: 200px;
+    height: 200px;
+    background-color: lightsteelblue;
+    margin: 50px 50px 50px 300px;
+}
+
+/*  */
+
+/* 
+TEXT-SHADOW
+*/
+
+.textShadow{
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: lightpink;
+    text-shadow: 0 2px 1px black;
+}
+.textShadow2{
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: lightskyblue;
+    text-shadow: 10px 12px 1px black;
+}
+.textShadow3{
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: black;
+    text-shadow: 5px 5px 1px lightcoral, -5px -5px 1px lightgreen ;
+}
+
+/*  */
+
+/* 
+LINEAR GRADIENT
+for: value untuk background-image / background, bukan property css3.
+ex: background: linear-gradient(sudut (0->180deg / 0->(-180)deg) | arah , warna awal, warna akhir) 
+                                                               (ATAU!)
+    ARAH value: to bottom,      to left top,
+                to top,         to left bottom,
+                to left,        to right top,
+                to right,       top right bottom.
+
+        1. background: linear-gradient(90deg, lightskyblue, lightgreen );
+        2. background: linear-gradient(to right bottom, lightskyblue, lightgreen );
+        
+        COLOR-STOP:
+        3. background: linear-gradient(to bottom, lightskyblue 60%, lightgreen 40%);
+
+
+   
+
+*/
+
+.linearGradient {
+    /* main */
+    background: linear-gradient(lightcoral, lightskyblue, lightgreen );
+    /* sub */
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+.linearGradient2 {
+    /* main */
+    background: linear-gradient(-45deg, lightcoral, lightskyblue, lightgreen );
+    /* sub */
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;    
+}
+.linearGradient3 {
+    /* main */
+    background: linear-gradient(to top left,lightcoral 10%, lightskyblue 60% );
+    /* sub */
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/*  */
+
+/* 
+RADIAL GRADIENT
+for: value untuk background-image / background, bukan property css3.
+ex: background: radial-gradient((tipe -> ellipse & circle) (jangkauan) at (y-axis)(x-axis) = <top left / bottom right DLL>, (warna1), (warna2), ..(warnaN)
+    
+    JANGKAUAN value: closest-corner, closest-side, farthest-corner, farthest-side
+    X-AXIS value: left, center, right
+    Y-AXIS value: top, center, bottom
+    
+
+
+
+
+*/
+
+.radialGradient {
+    /* main */
+    background: radial-gradient(lightcoral , lightskyblue , lightgreen );
+    /* sub */
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.radialGradient2{
+    /* main */
+    background: radial-gradient(ellipse farthest-corner at top left, lightcoral , lightskyblue , lightgreen );
+    /* sub */
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.radialGradient3 {
+    /* main */
+    background: radial-gradient(circle closest-side at center, lightcoral , lightskyblue , lightgreen  );
+    /* sub */
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+/*  */
+
+
+/* 
+FONT-FACE
+
+@font-face {
+    font-family: "namaFontBaru"
+    src: url('./lokasiFontBaru.eot');
+    src: url('./lokasiFontBaru.eot?iefix'); format('embedded-opentype')
+    src: url('./lokasiFontBaru.woff2'); format('woff2')
+    src: url('./lokasiFontBaru.woff'); format ('woff') ---> untuk WEB BROWSER
+    src: url('./lokasiFontBaru.ttf'); format ('truetype')
+    src: url('./lokasiFontBaru.svg#svgFontName'); format('svg')
+}
+
+*/
+
+@font-face {
+    font-family: "Kaushan Script";
+    src: url('./font/KaushanScript-Regular.otf') format('truetype')
+}
+
+.kaushan{
+    /* main */
+    font-family: "Kaushan Script", arial;
+
+    /* sub */
+    font-size: 100px;
+    text-align: center;
+}
+/*  */
+
+
+/* 
+VENDOR-PREFIX
+
+     -webkit-filter: grayscale(100%);  --> chrome, safari, new Opera
+     -moz-filter: grayscale(100%); --> Mozilla
+     -ms-filter: grayscale(100%); --> Internet Explorer 
+     -o-filter: grayscale(100%); --> old Opera
+
+
+###
+Link
+1. Should I Prefix
+http://shouldiprefix.com/
+2. Can I Use
+http://caniuse.com/
+3. Pleease.io
+http://pleeease.io/play/
+4. Emmet
+http://emmet.io/
+### 
+*/
+
+.prefix{
+    /* main */
+    -webkit-filter: grayscale(100%); 
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
+
+/*  */
+
+/*
+FILTER: memberikan efek visual pada gambar, background, dan border.
+blur: 10px;
+brightness: 0-1 || 0%-100%
+contrast: 0-1 || 0%-100%
+saturate: 0-1 || 0%-100%
+grayscale: 0-1 || 0%-100%
+sepia: 0-1 || 0%-100%
+hue-rotate: (deg)
+invert: 0-1 || 0%-100%
+opacity: 0-1 || 0%-100%
+drop-shadow: (sama seperti box-shadow) --> lebih baik pake ini, bisa dipake di gambar dan teks
+
+LINK:
+https://www.youtube.com/redirect?q=http%3A%2F%2Fhtml5-demos.appspot.com%2Fstatic%2Fcss%2Ffilters%2Findex.html&v=HvikjBA5jMc&redir_token=QUFFLUhqbjJhN21Ea3ZMZWhPNl9oMUlOUHNGUDA5allXZ3xBQ3Jtc0ttaEROYV93WTNLSDhGbGpHQmlvcGZ5YkFDcG5jR2E0ZFdSNEtYTUZXNUg4cVltLUdxaXVpUG04NGZvcXVzR2hEdFctdXYzVmd5N2RqdjJxRTZUN3lHZHpBRml1NzhMekNXLXg4OGhMSlpQX29RODMtZw%3D%3D&event=video_description
+
+*/
+
+.blur {
+    /* main */
+    filter: blur(3px);
+
+    /* sub */
+    background-image: url(./img/webs2.png);
+    width: 600px;
+    height: 200px;
+}
+
+.brightness {
+    /* main */
+    filter: brightness(1.2);
+
+    /* sub */
+    background-image: url(./img/webs2.png);
+    width: 600px;
+    height: 200px;
+}
+.contrast {
+    /* main */
+    filter: contrast(110%);
+
+    /* sub */
+    background-image: url(./img/webs2.png);
+    width: 600px;
+    height: 200px;
+}
+.saturate {
+    /* main */
+    filter: saturate(30%);
+
+    /* sub */
+    background-image: url(./img/webs2.png);
+    width: 600px;
+    height: 200px;
+}
+.grayscale {
+    /* main */
+    filter: grayscale(100%);
+
+    /* sub */
+    background-image: url(./img/webs2.png);
+    width: 600px;
+    height: 200px;
+}
+.sepia {
+    /* main */
+    filter: sepia(100%);
+
+    /* sub */
+    background-image: url(./img/webs2.png);
+    width: 600px;
+    height: 200px;
+}
+.hueRotate {
+    /* main */
+    filter: hue-rotate(100deg);
+    /* merotasi derajat searah jarum jam */
+
+    /* sub */
+    background-image: url(./img/webs2.png);
+    width: 600px;
+    height: 200px;
+}
+.invert {
+    /* main */
+    filter: invert(100%);
+
+    /* sub */
+    background-image: url(./img/webs2.png);
+    width: 600px;
+    height: 200px;
+}
+.opacityFilter {
+    /* main */
+    filter: opacity(0.4);
+
+    /* sub */
+    background-image: url(./img/webs2.png);
+    width: 600px;
+    height: 200px;
+}
+.dropShadow {
+    /* main */
+    filter: drop-shadow(10px 10px 5px black);
+
+    /* sub */
+    background-image: url(./img/webs2.png);
+    width: 600px;
+    height: 200px;
+}
+
+/*  */
+
+/* 
+TRANSFORM
+scale: memperbesar/memperkecil elemen. --> value: (angka), scaleX(angka), scaleY(angka)
+rotate: memutar elemen. --> (deg), rotateX(deg), rotateY(deg)
+skew: membuat miring/condong elemen. --> (deg), skewX(deg), skewY(deg)
+translate: mengubah posisi elemen. --> (px), translateX(px), translate(px)
+*/
+
+.scale{
+
+    /* main */
+    transform: scale(2, 0.5);
+    /* sub */
+    width: 100px;
+    height: 100px;
+    background-color:lightcoral;
+
+}
+
+.rotate{
+
+    /* main */
+    transform: rotate(45deg);
+    /* sub */
+    width: 100px;
+    height: 100px;
+    background-color:lightcoral;
+    
+}
+
+.skew{
+    /* main */
+    transform:skew(-30deg);
+    /* sub */
+    width: 100px;
+    height: 100px;
+    background-color:lightcoral;
+    
+}
+
+.translate{
+    /* main */
+    transform: translate(220px, 30px);
+    /* sub */
+    width: 100px;
+    height: 100px;
+    background-color:lightcoral;
+    
+}
