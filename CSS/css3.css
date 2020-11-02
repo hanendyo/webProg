@@ -561,3 +561,181 @@ translate: mengubah posisi elemen. --> (px), translateX(px), translate(px)
     background-color:lightcoral;
     
 }
+/*  */
+
+/* 
+TRANSITION
+mempunyai 2 keadaan: awal dan akhir.
+transition: [property] <durasi> [fungsi] [delay] --> durasi paling utama, lainnya opsi.
+                property: all, <nama property>, dan none.
+                    durasi: 1s & 1ms
+                        fungsi: ease, ease-in, ease-out, ease-in-out, linear, cube-bezier
+                            delay:  1s & 1ms
+
+*/
+
+.transition1 {
+    /* main */
+    transition: 1s;
+    /* sub */
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+}
+
+.transition1:hover {
+    transform: rotate(180deg);
+}
+
+.transitionContainer{
+    
+    width: 800px;
+    margin-right: 10px auto;
+    border: 3px solid black;
+}
+
+.transition2{
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+    /* main */
+    transition: 1s;
+}
+
+.transitionContainer:hover .transition2 {
+    /* transform: rotate(360deg); */
+    width: 800px;
+    /* margin-left: 700px; */
+    background-color: lightsalmon;
+    
+}
+
+.fungsiContainer{
+    width: 800px;
+    margin: 10px auto;
+    border: 3px solid black;
+  
+}
+
+.fungsiContainer:hover .kotak {
+    transform: rotate(720deg);
+    margin-left: 700px;
+    background-color: whitesmoke;
+    color: black;
+    
+}
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color:black;
+
+    line-height: 100px; 
+    text-align: center;
+    color: whitesmoke;
+}
+
+.ease   {
+    transition: all 3s ease;
+}
+.ease-in   {
+    transition: 1s ease-in;
+}
+.ease-out   {
+    transition: 1s ease-out;
+}
+.ease-in-out   {
+    transition: 1s ease-in-out;
+}
+.linear   {
+    transition: 1s linear;
+}
+.cube-bezier   {
+    transition: 1s cubic-bezier(.81,.12,.17,2.03);
+}
+
+/* delay */
+
+
+.delayContainer{
+    width: 800px;
+    margin: 10px auto;
+    border: 3px solid black;
+  
+}
+
+.delayContainer:hover .kotak {
+    transform: rotate(720deg);
+    margin-left: 700px;
+    background-color: whitesmoke;
+    color: black;
+    
+}
+.delay {
+    transition: margin-left 1s 1s, transform 2s 2s, background-color 3s 3s, color 1s ;
+}
+
+/*  */
+
+
+/* 
+ANIMATION
+animation: name, duration, timing-function, iteration, direction, fill-mode, play-state
+
+value: interation-count: angka || infinite
+            direction: normal || reverse || alternate ||alternate-reverse
+                fill-mode: none || forwards || backwards || both
+                    play-state: running || paused --> penggunaannya menggunakan JScript!     
+*/
+
+.animationContainer{
+    width: 800px;
+    margin: 10px auto;
+    border: 3px solid black;
+  
+}
+
+.cube {
+    width: 150px;
+    height: 100px;
+    background-color: lightskyblue;
+}
+
+.animationContainer:hover .animationIteration{
+    animation: animasiKotak2 1s ease infinite;
+}
+.animationContainer:hover .animationDirection{
+    animation: animasiKotak2 1s ease infinite alternate;
+}
+.animationContainer:hover .animationFillMode{
+    animation: animasiKotak2 1s ease 3 forwards;
+}
+.animationContainer:hover .animationPlayState{
+    animation: animasiKotak2 1s ease infinite paused;
+}
+
+/* jika hanya 2 keadaan */
+/* @keyframes animasiKotak1 {
+    from{
+        <css-property>
+    }
+
+    to {
+        <css-property>
+    }
+} */
+
+/* jika lebih dari 2 keadaan */
+
+@keyframes animasiKotak2 {
+    0% {
+        width: 150px;
+    }
+
+    50% {
+        width: 250px;
+    }
+
+    100% {
+        width: 350px;
+    }
+}
