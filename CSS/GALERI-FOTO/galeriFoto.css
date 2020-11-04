@@ -1,0 +1,227 @@
+/* 
+CSS RESET
+untuk menghilangkan margin padding pada body.
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  */
+
+/* font */
+@font-face {
+    font-family: "Yellowtail";
+    src: url('../font/Yellowtail-Regular-webfont.woff') format('truetype')
+}
+
+/* style utama */
+body{
+    font: 18px/36px 'Yellowtail', arial;
+    background-color: lightskyblue;
+}
+
+.judul {
+    font-size: 80px;
+    margin: 50px 0;
+    text-align: center;
+    -webkit-filter: drop-shadow(0px 0px 17px red);
+}
+
+.container {
+    width: 400px;
+    background-color: antiquewhite;
+    margin: auto;
+    padding: 20px;
+    /* -webkit-filter: drop-shadow(0px 0px 10px red); */ 
+    box-shadow: 0px 25px 10px -10px rgba(255,0,0,0.7);
+    border-radius: 5px;
+}
+
+.gallery li {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 5px red;
+    /* -webkit-filter: drop-shadow(0px 0px 1px blue); */
+    /* display: inline-block; */
+    float: left;
+    margin: 6px;
+    position: relative;
+}
+
+.clear{
+    clear: both;
+}
+
+.gallery li .thumb {
+    width: 120px;
+    height: 120px;  
+    border-radius: 50%;
+}
+
+.gallery li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200, 200, 0.7);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: red;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.3s;
+    transform: scale(0) rotate(0);
+}
+
+.gallery li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+
+
+/* overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+   
+    background: rgba(0,0,0, 0);
+
+    z-index: 1;
+
+    transition: 0.5s;
+
+    text-align: center;
+
+    padding:100px 0 ;
+}
+ 
+.overlay:target {
+    width: auto;
+    height: auto;
+ 
+    bottom: 0px;
+    right: 0px; 
+
+    background: rgba(0,0,0, 0.7);
+}
+
+/* transition img */
+/* .overlay img {
+    max-height: 0%;
+    transition: 0.5s;
+
+}
+.overlay:target img {
+    border-radius: 0;
+    max-height: 100%;
+    border: 3px solid lightpink;
+
+} */
+
+
+/* animasi */
+.overlay img{
+    max-height: 100%;
+    opacity: 0;
+}
+.overlay:target img {
+    border: 3px solid lightpink;
+    animation: animasiImage 1.5s forwards;
+}
+
+@keyframes animasiImage {
+    0% {
+        /* transform: scale(0); */
+        opacity: 1;
+
+        margin-bottom: -50%;
+      
+    }
+    100% {
+        /* transform: scale(1); */
+        opacity: 1;
+
+        margin-top: 0px;
+    }
+}
+
+/* tombol close */
+
+.overlay .close {
+    position: absolute;
+    top: 64px;
+    color: lightpink;
+    text-decoration: none;
+    border-bottom: 3px solid lightpink;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.overlay:target .close {
+    animation: animasiTombolClose .5s forwards;
+}
+
+@keyframes animasiTombolClose {
+    0% {
+        opacity: 1;
+        margin-top: -20%;
+    }
+
+    100% {
+        opacity: 1;
+        margin-bottom: 0;
+    }
+}
