@@ -1,0 +1,566 @@
+/* 
+FLEXBOX
+
+istilah:
+    main axis == sumbu utama dari sebuah container yang menentukan urutan dari penempatan items secara horizontal 
+    main-start || main-end == mulai dan berakhirnya items yang disimpan didalam container 
+    main size == ukuran (width/height) dari container yang akan membuat dimensi  dari items yang relatif terhadap main size
+
+property:
+    -display: flex; == membuat element parent menjadi flex box, dan membuat elemen2 didalamnya berprilaku flex juga.
+
+    
+*/
+
+/* 
+DISPLAY
+flex:
+flex-direction: row || row-reverse || coloumn || coloumn-reverse;
+flex-wrap: nowrap || wrap || wrap-reverse;
+justify-content: flex-start (rata kiri) || flex-end (rata kanan) || center (tengah)|| space-between (elemenAwal to the left, dan elemenAkhir to the right) || space-around (meratakan sisi kanan dan kiri setiap elemen)|| space-evenly (sisi kiri kanan sama rata);
+*/
+
+.containerRow {
+    /* main */
+    display: flex;
+    flex-direction: row;
+    /* sub */
+    width: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.containerRow div {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+
+.containerRowReverse {
+    /* main */
+    display: flex;
+    flex-direction: row-reverse;
+    /* sub */
+    width: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.containerRowReverse  div {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+.containerColumn {
+    /* main */
+    display: flex;
+    flex-direction: column;
+    /* sub */
+    width: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    
+}
+
+.containerColumn div {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+.containerColumnReverse {
+    /* main */
+    display: flex;
+    flex-direction: column-reverse;
+    /* sub */
+    width: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.containerColumnReverse div {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+
+/* flex-wrap */
+.wrap {
+    /* main */
+        display: flex;
+        flex-wrap: wrap;
+    /* sub */
+    width: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.wrap div {
+
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+.wrapReverse {
+    /* main */
+    display: flex;
+    flex-wrap: wrap-reverse;
+    /* sub */
+    width: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.wrapReverse div {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+
+/* justify-content */
+
+.flexStart {
+    /* main */
+    display: flex;
+    justify-content: flex-start; 
+    /* sub */
+    width: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.flexStart div {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+
+.flexEnd {
+    /* main */
+    display: flex;
+    justify-content: flex-end; 
+    /* sub */
+    width: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.flexEnd div {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+.center {
+    /* main */
+    display: flex;
+    justify-content: center; 
+    /* sub */
+    width: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.center div {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+.spaceBetween {
+    /* main */
+    display: flex;
+    justify-content: space-between; 
+    /* sub */
+    width: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.spaceBetween div {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+.spaceAround {
+    /* main */
+    display: flex;
+    justify-content: space-around; 
+    /* sub */
+    width: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.spaceAround div {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+.spaceEvenly {
+    /* main */
+    display: flex;
+    justify-content: space-evenly; 
+    /* sub */
+    width: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.spaceEvenly div {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+
+/* align-items */
+.alignFlexStart {
+    /* main */
+    display: flex;
+    align-items: flex-start;
+    /* sub */
+    width: 500px;
+    height: 300px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.alignFlexStart div {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+.alignFlexEnd {
+    /* main */
+    display: flex;
+    align-items: flex-end; 
+    /* sub */
+    width: 500px;
+    height: 300px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.alignFlexEnd div {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+
+.alignCenter {
+    /* main */
+    display: flex;
+    align-items: center; 
+    /* sub */
+    width: 500px;
+    height: 300px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.alignCenter div {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+.stretch {
+    /* main */
+    display: flex;
+    align-items: stretch;  
+    /* sub */
+    width: 500px;
+    height: 300px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.stretch div {
+    width: 100px;
+    /* height: 100px; */
+    background-color: lightseagreen;
+    margin: 1px;
+}
+.baseline {
+    /* main */
+    display: flex;
+    align-items: baseline; 
+    /* sub */
+    width: 500px;
+    height: 300px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.baseline  div {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+.baseline .one {
+  font-size: 60px;
+}
+.baseline .two {
+    font-size: 100px;
+}
+.baseline .three {
+    font-size: 30px;
+}
+.baseline .four {
+    font-size: 30px;
+}
+
+
+/* align-content */
+.alignContentflexStart {
+    /* main */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start; 
+    /* sub */
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.alignContentflexStart div {
+    /* width: 100px; */
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+
+.alignContentflexEnd {
+    /* main */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end; 
+    /* sub */
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.alignContentflexEnd div {
+    /* width: 100px; */
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+.alignContentcenter {
+    /* main */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center; 
+    /* sub */
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.alignContentcenter div {
+    /* width: 100px; */
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+.alignContentspaceBetween {
+    /* main */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between; 
+    /* sub */
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.alignContentspaceBetween div {
+    /* width: 100px; */
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+.alignContentspaceAround {
+    /* main */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around; 
+    /* sub */
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.alignContentspaceAround div {
+    /* width: 100px; */
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+}
+
+.satu {
+  width: 150px;
+}
+.dua {
+    width: 50px;
+}
+.tiga {
+    width: 260px;
+}
+.empat {
+    width: 220px;
+}
+.lima{
+    width: 50px;
+}
+.enam{
+    width: 150px;
+}
+.tujuh{
+    width: 50px;
+}
+
+.depalan{
+    width: 100px;
+}
+
+.sembilan {
+    width: 170px;
+}
+
+
+/* 
+PROPERTY PADA ITEMS (childs)
+order: (angka)
+flex-grow: (angka) akan memenuhi container
+*/
+
+.orderContainer {
+    display: flex;
+
+    width: 500px;
+    /* height: 300px; */
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.orderContainer div {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+    flex: 1;
+}
+/* order */
+.wahid{order: 2;}
+.isnain{order: 4;}
+.salasa{order: 1;}
+.arbaah{order: 3;}
+
+
+/* flex-grow */
+.orderContainer div.duaisnain{flex-grow: 2;}
+
+
+
+
+/* align-self */
+.alignContainer {
+    display: flex;
+    
+    width: 500px;
+    height: 300px;
+    border: 3px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+
+}
+
+.alignContainer div {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin: 1px;
+    flex: 1;
+}
+
+/* alignself */
+.siji{align-self: flex-start;}
+.loro{align-self: flex-end;}
+.telu{align-self: center;}
+.papat{align-self: stretch;}
+
+/*  */

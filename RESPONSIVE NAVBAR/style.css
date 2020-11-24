@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+/* navbar */ 
+nav{
+    display: flex;
+    background-color: lightseagreen;
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    height: 40px;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: 'Big Shoulders Stencil Text';
+    letter-spacing: 2px;
+    font-size: 23px;
+    color: lightpink;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;   
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: lightpink;
+}
+
+nav ul li a:hover {
+    color: whitesmoke;
+}
+
+/* Hamburger Menu */
+.menuToggle{
+ display: none;
+ flex-direction: column;
+ height: 20px;
+ justify-content: space-between;
+ position: relative;
+}
+
+.menuToggle input {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menuToggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: lightpink;
+    border-radius: 3px;
+    transition: all 0.4s;
+}
+
+/* Hamburger Menu Animation */
+.menuToggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+.menuToggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menuToggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menuToggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menuToggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0)
+}
+
+/* responsive breakpoint */
+/* ukuran tablet */
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+
+}
+@media screen and (max-width: 576px) {
+    body {
+        overflow-x: hidden;
+    }
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 70%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: lightseagreen;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 0.5s;
+        opacity: 0.3;
+    }
+
+    nav ul.slide{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .menuToggle {
+        display: flex;
+    }
+
+}

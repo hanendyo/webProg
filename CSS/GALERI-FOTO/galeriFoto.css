@@ -213,6 +213,10 @@ body{
 .overlay:target .close {
     animation: animasiTombolClose .5s forwards;
 }
+/* 
+.close:hover {
+opacity: 0.3;
+} */
 
 @keyframes animasiTombolClose {
     0% {
@@ -224,4 +228,31 @@ body{
         opacity: 1;
         margin-bottom: 0;
     }
+}
+
+/* navigasi */
+
+.overlay .next{
+    position: absolute;
+    top: 320px;
+    right: 270px;
+    color: lightpink;
+    text-decoration: none;
+    /* border-bottom: 3px solid lightpink; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.overlay .prev{
+    position: absolute;
+    top: 320px;
+    left: 270px;
+    color: lightpink;
+    text-decoration: none;
+    /* border-bottom: 3px solid lightpink; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.overlay .prev:hover , .next:hover  {
+    opacity: 0.5;
 }
