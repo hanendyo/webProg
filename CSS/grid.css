@@ -1,0 +1,120 @@
+/* PAKAI FLEXBOX */
+/* html body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    background-color: lightgray;
+    margin: 40px auto;
+    position: relative;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.header{
+    background-color: lightseagreen;
+    text-align: center;
+    height: 50px;
+}
+
+.content{
+    display: flex;
+}
+
+.sidebar{
+    flex: 1;
+}
+
+.main{
+    background-color: limegreen;
+    height: 200px;
+    text-align: center;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside {
+    background-color: lightcoral;
+    height: 70px;
+    text-align: center;
+}
+.nav {
+    background-color: burlywood;
+    height: 130px;
+    text-align: center;
+}
+
+
+.footer{
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+} */
+/*  */
+
+/* PAKAI CSS GRID */
+html body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    background-color: lightgray;
+    margin: 50px auto;
+    box-sizing: border-box;
+    border: 2px solid black;
+    display: grid;
+    grid-template-areas: "header header" "aside main" "nav main" "footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1.3fr ;
+}
+
+header{
+    grid-area: header;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 30px 0; */
+}
+
+main{
+    grid-area: main;
+    background-color: limegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    grid-area: aside;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 40px 0; */
+}
+nav {
+    grid-area: nav;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 100px 0; */
+}
+
+
+footer{
+    grid-area: footer;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
