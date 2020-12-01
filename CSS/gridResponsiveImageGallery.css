@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    margin: 50px auto;
+}
+
+img{
+    display: inline-block;
+    width: 100%;
+}
+
+.gallery{
+    width: 60%;
+    margin: 20px auto;
+    border: 10px solid lightseagreen;
+    list-style: none;
+    box-shadow: 2px 2px 2px gray;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr) );
+}

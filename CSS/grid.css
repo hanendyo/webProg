@@ -1,62 +1,3 @@
-/* PAKAI FLEXBOX */
-/* html body {
-    padding: 0;
-    margin: 0;
-}
-
-.container {
-    width: 600px;
-    background-color: lightgray;
-    margin: 40px auto;
-    position: relative;
-    box-sizing: border-box;
-    border: 2px solid black;
-}
-
-.header{
-    background-color: lightseagreen;
-    text-align: center;
-    height: 50px;
-}
-
-.content{
-    display: flex;
-}
-
-.sidebar{
-    flex: 1;
-}
-
-.main{
-    background-color: limegreen;
-    height: 200px;
-    text-align: center;
-    flex: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.aside {
-    background-color: lightcoral;
-    height: 70px;
-    text-align: center;
-}
-.nav {
-    background-color: burlywood;
-    height: 130px;
-    text-align: center;
-}
-
-
-.footer{
-    height: 30px;
-    background-color: black;
-    color: white;
-    text-align: center;
-} */
-/*  */
-
 /* PAKAI CSS GRID */
 html body {
     padding: 0;
@@ -117,4 +58,911 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* CSS GRID 
+
+-LEGEND:
+1.GRID CONTAINER = element pembungkus grid
+    contoh; display: grid;
+2.GRID ITEM = elemen yg berada (1 level) di dalam grid container.
+3.GRID LINE = garis horizontal (coloumn) atau vertikal (row) yang memisahkan grid menjadi
+                    beberapa bagian dan ditandai dgn angka.
+4.GRID CELL = perpotongan antara row dan coloumn di dalam grid.
+5.GRID AREA = kumpulan lebih dari satu grid cell yang membentuk kotak.
+6.GRID TRACK = ukuran / jarak antara 2 grid line, bisa horizontal (coloumn) atau vertikal (row)
+7.GRID GAP = jarak antara grid track / cell.
+
+-PROPERTY: 
+1. untuk container:
+>grid-template-coloumns 
+>gird-template-rows 
+>grid-auto-coloumns
+>grid-auto-flow
+>grid-template-areas
+>grid-template
+>grid-coloumn-gap
+>grid-row-gap
+>grid-gap
+>grid
+>justify-items
+>align-items
+>place-items
+>justify-content
+>align-content
+>place-content
+
+2. untuk item:
+>grid-cloumn-start
+>grid-coloumn-end
+>grid-row-start
+>grid-row-end
+>grid-coloumn
+>grid-row
+>grid-area
+>justify-self
+>align-self
+>place-self
+
+-SHORTHAND GRID-TEPLATE.
+grid-template: <grid-template-rows> | <grid-template-areas / <grid-template-columns>;
+
+-GRID (SHORTHAND) 
+grid: <grid-template-rows> <grid-template-columns> <grid-template-areas> <grid-auto-rows> <grid-auto-columns> <grid-auto-flow>
+
+*/
+
+
+
+/* GRID COLOUMN & ROW */
+/* col */
+.colContainer{
+    /* main */
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr;
+
+    /* sub */
+    width: 60%;
+    margin: 5px auto  ;
+}
+
+.colItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.colItem:nth-child(odd){
+    background-color: lightpink;
+}
+
+/* row */
+.rowContainer{
+    /* main = jika mau, inputan value sesuai dgn banyaknya row */
+    display: grid;
+    grid-template-rows:1fr 2fr 4fr;    
+    /* sub */
+    width: 60%;
+    margin: 20px auto;
+}
+.rowItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.rowItem:nth-child(odd){
+    background-color: lightpink;
+}
+/*  */
+
+/* 
+EXPLICIT & IMPLICIT GRID 
+
+explicit = dituliskan pada css
+implicit = tidak dituliskan pada css
+
+3 macam garis:
+>garis solid = explicit grid
+>garis putus2 = explicit item / track
+>garis titik2 = implicit item  / track 
+
+*/
+
+/* exim */
+.eximContainer{
+    /* main */
+    display: grid;
+    grid-template-columns: 150px 100px;  
+    grid-template-rows: 50px 100px 150px;  
+    /* sub */
+    width: 60%;
+    margin: 20px auto;
+}
+.eximItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.eximItem:nth-child(odd){
+    background-color: lightpink;
+}
+/*  */
+
+/* 
+AUTO COL & ROW 
+
+berfungsi untuk mengatur implicit grid! (sisa dari explicit grid)
+*/
+
+/* autoRow */
+.autoRowContainer{
+    /* main */
+    display: grid;
+    grid-template-columns: 150px 100px;  
+    grid-template-rows: 20px 40px 60px; 
+        /* main 2 */
+        grid-auto-rows: 100px;
+    /* sub */
+    width: 60%;
+    margin: 20px auto;
+}
+.autoRowItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.autoRowItem:nth-child(odd){
+    background-color: lightpink;
+}
+
+
+/*
+ auto flow 
+berfungsi untuk membuat sisa coloumn/row menjadi implicit
+*/
+/* autoFlow */
+.autoFlowColContainer{
+    /* main */
+    display: grid;
+    grid-template-columns: 40px 40px;  
+        /* main 2 */
+        grid-auto-flow: column;
+        grid-auto-columns: 100px;
+    /* sub */
+    width: 60%;
+    margin: 20px auto;
+}
+.autoFlowColItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.autoFlowColItem:nth-child(odd){
+    background-color: lightpink;
+}
+/*  */
+
+
+/* 
+SPECIAL KEYWORDS & FUNCTION 
+
+>repeat: menentukan ukuran grid track secara berulang
+>min-content: menentukan seberapa besar ukuran grid track berdasarkan content pada sebuah item. 
+>max-content:  sama kek diatas
+>minmax: menentukan ukuran min & max dari grid track 
+>autofill: menentukan jumlah item untuk berada pada grid track
+>autofit: sama kek diatas
+
+*/
+
+
+
+/* repeat */
+.repeatContainer{
+    /* main */
+    display: grid;
+    grid-template-rows: (9, 1fr);
+
+
+    /* sub */
+    width: 600px;
+    margin: 20px auto;
+}
+.repeatItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.repeatItem:nth-child(odd){
+    background-color: lightpink;
+}
+
+/* min-content  */
+/* ukuran cell sesuai kata yg terpanjang  */
+.minContentContainer{
+    /* main */
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+
+
+    /* sub */
+    width: 600px;
+    margin: 20px auto;
+}
+.minContentItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.minContentItem:nth-child(odd){
+    background-color: lightpink;
+}
+
+/* max content */
+/* ukuran cell sebesar panjang dari content */
+.maxContentContainer{
+    /* main */
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+
+
+    /* sub */
+    width: 600px;
+    margin: 20px auto;
+}
+.maxContentItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.maxContentItem:nth-child(odd){
+    background-color: lightpink;
+}
+
+/* minmax */
+.minmaxContainer{
+    /* main */
+    display: grid;
+    grid-template-columns: 1fr minmax(100px, 300px) 1fr;
+
+
+    /* sub */
+    /* border: 3px solid black; */
+    max-width: 60%;
+    margin: 20px auto;
+}
+.minmaxItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+
+.minmaxItem:nth-child(odd){
+    background-color: lightpink;
+}
+
+
+
+/* auto fill */
+.autofillContainer{
+    /* main */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+
+
+    /* sub */
+    border: 3px solid black;
+    width: 60%;
+    margin: 20px auto;
+}
+.autofillItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.autofillItem:nth-child(odd){
+    background-color: lightpink;
+}
+
+/* auto fit */
+.autofitContainer{
+    /* main */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+
+
+    /* sub */
+    border: 3px solid black;
+    width: 60%;
+    margin: 20px auto;
+}
+.autofitItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.autofitItem:nth-child(odd){
+    background-color: lightpink;
+}
+
+
+/*
+ GRID AREA & GAP 
+ >grid-template-area = mendefinisikan grid tempalte menggunakan nama dari area yang ditulis
+                         pada property grid-area pada item.
+ 
+ */
+
+ .areaContainer{
+    
+    /* main 2 */
+    grid-template-areas: 
+    'header header header'
+    'sidebar sidebar sidebar'
+    'content content content'
+    'footer footer footer';
+
+    /* main */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+    /* sub */
+    /* border: 3px solid black; */
+    width: 60%;
+    margin: 20px auto;
+}
+.areaItem{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.header{
+    /* main */
+    grid-area: header;
+    background-color: lightcoral;
+}
+
+.sidebar{
+     /* main */
+    grid-area: sidebar;
+    background-color: lightgoldenrodyellow;
+}
+
+.content{
+     /* main */
+ grid-area: content;
+ background-color: lightseagreen;
+}
+
+.footer{
+     /* main */
+    grid-area: footer;
+    background-color: lightslategray;
+}
+
+/* responsive breakpoint */
+@media screen and (min-width: 576px){
+    .areaContainer{
+        grid-template-areas: 
+        'header header header'
+        'sidebar content content'
+        'sidebar content content'
+        'footer footer footer';
+    }
+}
+/*  */
+
+/* GRID TEPLATE (SHORTHAND) */
+.shorthandContainer{
+    /* main */
+    display: grid;
+
+    /* shorthand */
+    grid-template:  
+    [baris1-awal] 'header header header' 50px
+    [baris1-akhir baris2-awal] 'footer footer footer' 100px
+    [baris2-akhir] / 1fr 2fr 3fr;
+
+    /* non-shorthand */
+    /* grid-template-columns: 1fr 2fr 3fr;
+    grid-template-areas: 
+    'header header header'
+    'footer footer footer';
+    grid-template-rows: 
+    [baris1-awal] 50px
+    [bari1-akhir baris2-awal] 100px
+    [baris2-akhir]; */
+
+
+    /* sub */
+    border: 3px solid black;
+    width: 60%;
+    margin: 20px auto;
+}
+.shorthandItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.shorthandItem:nth-child(odd){
+    background-color: lightpink;
+}
+/*  */
+
+/* GRID GAP */
+.gapContainer{
+    /* main */
+    row-gap: 20px;
+    column-gap: 20px;
+
+    /* main shorthand */
+    /* gap: 20px; */
+
+    /* sub */
+    display: grid;
+    grid-template:  
+    [baris1-awal] 'header header header' 50px
+    [baris1-akhir baris2-awal] 'footer footer footer' 100px
+    [baris2-akhir] / 1fr 2fr 3fr;
+
+    /* sub */
+    border: 3px solid black;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.gapItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+.gapItem:nth-child(odd){
+    background-color: lightpink;
+}
+/*  */
+
+/* 
+GRID ALIGNMENT
+
+>justify-items = mensejajarkan grid-items pada sumbu horizontal
+>
+>
+
+>justify-content = mengatur posisi seluruh gridcontaienr pada sumbu horizontal.
+                   (ini bisa dilakukan ketika ukuran total grid lebih kecil dari ukuran containernya, biasanya ketika grid itemsnya menggunakan ukuran yang fixed (px) )                   
+>
+>
+
+
+*/
+
+/* justify item */
+.justifyStartContainer{
+    
+    width: 300px;
+    margin: auto;
+    
+    display: grid;
+    grid-template: 
+    'start start' 50px;
+ 
+    gap: 5px;
+
+    border: 2px solid black;
+
+    /* main */
+    justify-items: start;
+}
+.justifyEndContainer{
+    
+    width: 300px;
+    margin: auto;
+    
+    display: grid;
+    grid-template: 
+    'end end' 50px;
+ 
+    gap: 5px;
+
+    border: 2px solid black;
+
+    /* main */
+    justify-items: end;
+}
+.justifyCenterContainer{
+    
+    width: 300px;
+    margin: auto;
+    
+    display: grid;
+    grid-template: 
+    'center center' 50px;
+ 
+    gap: 5px;
+
+    border: 2px solid black;
+
+    /* main */
+    justify-items: center;
+}
+.justifyStrecthContainer{
+    
+    width: 300px;
+    margin: auto;
+    
+    display: grid;
+    grid-template: 
+    'strecth strecth' 50px;
+ 
+    gap: 5px;
+
+    border: 2px solid black;
+
+    /* main */
+    justify-items: stretch;
+}
+
+
+/* align item */
+.alignStartContainer{
+    
+    width: 300px;
+    margin: auto;
+    
+    display: grid;
+    grid-template: 
+    'start ' 50px
+    'start ' 50px;
+ 
+    gap: 5px;
+
+    border: 2px solid black;
+
+    /* main */
+    align-items: start;
+}
+.alignEndContainer{
+    
+    width: 300px;
+    margin: auto;
+    
+    display: grid;
+    grid-template: 
+    'end' 50px
+    'end' 50px;
+ 
+    gap: 5px;
+
+    border: 2px solid black;
+
+    /* main */
+    align-items: end;
+}
+.alignCenterContainer{
+    
+    width: 300px;
+    margin: auto;
+    
+    display: grid;
+    grid-template: 
+    'center' 50px
+    'center' 50px;
+ 
+    gap: 5px;
+
+    border: 2px solid black;
+
+    /* main */
+    align-items: center;
+}
+.alignStrecthContainer{
+    
+    width: 300px;
+    margin: auto;
+    
+    display: grid;
+    grid-template: 
+    'strecth' 50px
+    'strecth' 50px;
+ 
+    gap: 5px;
+
+    border: 2px solid black;
+
+    /* main */
+    align-items: stretch;
+}
+
+
+/* place item */
+.placeStartCenterContainer{
+    
+    width: 500px;
+    margin: auto;
+    
+    display: grid;
+    grid-template: 
+    'start ' 50px
+    'start ' 50px;
+ 
+    gap: 5px;
+
+    border: 2px solid black;
+
+    /* main */
+    place-items: start center;
+}
+.placeEndCenterContainer{
+    
+    width: 500px;
+    margin: auto;
+    
+    display: grid;
+    grid-template: 
+    'end' 50px
+    'end' 50px;
+ 
+    gap: 5px;
+
+    border: 2px solid black;
+
+    /* main */
+    place-items: end center;
+}
+.placeCenterCenterContainer{
+    
+    width: 500px;
+    margin: auto;
+    
+    display: grid;
+    grid-template: 
+    'center' 50px
+    'center' 50px;
+ 
+    gap: 5px;
+
+    border: 2px solid black;
+
+    /* main */
+    place-items: center center;
+}
+.placeStrecthCenterContainer{
+    
+    width: 500px;
+    margin: auto;
+    
+    display: grid;
+    grid-template: 
+    'strecth' 50px
+    'strecth' 50px;
+ 
+    gap: 5px;
+
+    border: 2px solid black;
+
+    /* main */
+    place-items: stretch center;
+}
+
+/* justify content */
+.justifySpaceAroundContainer{
+    width: 80%;
+    margin: 20px auto;
+    
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px;
+ 
+    /* gap: 5px; */
+
+    border: 2px solid black;
+
+    /* main */
+    justify-content: space-around;
+
+    background-color: gray;
+    color: white;
+}
+.justifySpaceBetweenContainer{
+    width: 80%;
+    margin: 20px auto;
+    
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px;
+ 
+    /* gap: 5px; */
+
+    border: 2px solid black;
+
+    /* main */
+    justify-content: space-between;
+
+    background-color: gray;
+    color: white;
+}
+.justifySpaceEvenlyContainer{
+    width: 80%;
+    margin: 20px auto;
+    
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px;
+ 
+    /* gap: 5px; */
+
+    border: 2px solid black;
+
+    /* main */
+    justify-content: space-evenly;
+
+    background-color: gray;
+    color: white;
+}
+
+/* align content */
+.alignSpaceAroundContainer{
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px;
+ 
+    /* gap: 5px; */
+
+    border: 2px solid black;
+
+    /* main */
+    align-content: space-around;
+
+    background-color: gray;
+    color: white;
+}
+.alignSpaceBetweenContainer{
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px;
+ 
+    /* gap: 5px; */
+
+    border: 2px solid black;
+
+    /* main */
+    align-content: space-between;
+
+    background-color: gray;
+    color: white;
+}
+.alignSpaceEvenlyContainer{
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px;
+ 
+    /* gap: 5px; */
+
+    border: 2px solid black;
+
+    /* main */
+    align-content: space-evenly;
+
+    background-color: gray;
+    color: white;
+}
+
+.placeAroundBetweenContainer{
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px;
+ 
+    /* gap: 5px; */
+
+    border: 2px solid black;
+
+    /* main */
+    place-content: space-around space-between;
+
+    background-color: gray;
+    color: white;
+}
+
+.placeBetweenEvenlyContainer{
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px;
+ 
+    /* gap: 5px; */
+
+    border: 2px solid black;
+
+    /* main */
+    place-content: space-between space-evenly;
+
+    background-color: gray;
+    color: white;
+}
+
+.placeEvenlyAroundContainer{
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px 50px;
+ 
+    /* gap: 5px; */
+
+    border: 2px solid black;
+
+    /* main */
+    place-content: space-evenly space-around;
+
+    background-color: gray;
+    color: white;
+}
+
+
+.alignmentItem{
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+
+    box-sizing: border-box;
+}
+
+.alignmentItem:nth-child(odd){
+    background-color: seagreen;
 }

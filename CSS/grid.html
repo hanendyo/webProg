@@ -15,19 +15,360 @@
             corporis,
             alias quas repellendus nam error aliquid animi ullam sapiente eius, enim dolores.</aside>
         <nav>NAV <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis possimus ullam natus molestiae at
-            nisi ut ipsam sed deserunt saepe? Ipsa doloribus quidem, soluta dolorem aliquid sed at non vitae eligendi
-            tempora laudantium recusandae porro ad consequuntur eius cupiditate, nostrum rerum nemo? Id nulla itaque
+            nisi ut ipsam sed deserunt saepe?
             iste enim repellendus alias adipisci!</nav>
         <main>MAIN <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore explicabo maiores quas dolor
             eligendi odio itaque culpa quis numquam corporis? Adipisci nam soluta veritatis, ipsum sunt deleniti, quis
-            magnam ad, iste neque reiciendis consectetur quo. Est harum error velit nesciunt tempora pariatur aliquid
-            labore facilis sint dolore maiores facere necessitatibus, vero deserunt ut veritatis iure minima, placeat
-            vitae excepturi quibusdam soluta. Ullam facilis reiciendis quos. Delectus distinctio culpa provident error
-            odit explicabo ullam, beatae illo dolore ab accusantium. Iusto molestias minus distinctio, non maxime beatae
-            saepe fugit velit dignissimos voluptate itaque alias quibusdam qui sequi, a recusandae eligendi hic quae.
+            magnam ad, iste neque reiciendis consectetur quo.
         </main>
         <footer>FOOTER</footer>
     </div>
+
+    <h1 style="text-align: center;">CSS GRID</h1>
+
+    <h3>GRID ROW & COLOUMN</h3>
+    <p style="text-align: center;">COLOUMN</p>
+    <div class="colContainer">
+        <div class="colItem">1</div>
+        <div class="colItem">2</div>
+        <div class="colItem">3</div>
+        <div class="colItem">4</div>
+        <div class="colItem">5</div>
+        <div class="colItem">6</div>
+        <div class="colItem">7</div>
+        <div class="colItem">8</div>
+        <div class="colItem">9</div>
+    </div>
+    <p style="text-align: center;">ROW</p>
+    <div class="rowContainer">
+        <div class="rowItem">1</div>
+        <div class="rowItem">2</div>
+        <div class="rowItem">3</div>
+        <div class="rowItem">4</div>
+        <div class="rowItem">5</div>
+        <div class="rowItem">6</div>
+        <div class="rowItem">7</div>
+        <div class="rowItem">8</div>
+        <div class="rowItem">9</div>
+    </div>
+
+
+
+    <h3>EXPLICIT & IMPLICIT GRID</h3>
+    <div class="eximContainer">
+        <div class="eximItem">1</div>
+        <div class="eximItem">2</div>
+        <div class="eximItem">3</div>
+        <div class="eximItem">4</div>
+        <div class="eximItem">5</div>
+        <div class="eximItem">6</div>
+        <div class="eximItem">7</div>
+        <div class="eximItem">8</div>
+        <div class="eximItem">9</div>
+    </div>
+    <p>buka inspect element! (f12) <br>
+        3 macam garis: <br>
+        >garis solid = explicit grid <br>
+        >garis putus2 = explicit item / track <br>
+        >garis titik2 = implicit item / track
+    </p>
+
+
+
+    <h5>AUTO COL & AUTO ROW</h5>
+    <p>berfungsi untuk mengatur implicit grid! (sisa dari explicit grid)</p>
+    <div class="autoRowContainer">
+        <div class="autoRowItem">1</div>
+        <div class="autoRowItem">2</div>
+        <div class="autoRowItem">3</div>
+        <div class="autoRowItem">4</div>
+        <div class="autoRowItem">5</div>
+        <div class="autoRowItem">6</div>
+        <div class="autoRowItem">7</div>
+        <div class="autoRowItem">8</div>
+        <div class="autoRowItem">9</div>
+    </div>
+
+
+
+    <h5>AUTO FLOW</h5>
+    <p>berfungsi untuk membuat sisa coloumn/row menjadi implicit </p>
+    <div class="autoFlowColContainer">
+        <div class="autoFlowColItem">1</div>
+        <div class="autoFlowColItem">2</div>
+        <div class="autoFlowColItem">3</div>
+        <div class="autoFlowColItem">4</div>
+        <div class="autoFlowColItem">5</div>
+        <div class="autoFlowColItem">6</div>
+        <div class="autoFlowColItem">7</div>
+        <div class="autoFlowColItem">8</div>
+        <div class="autoFlowColItem">9</div>
+    </div>
+
+
+
+    <h3>SPECIAL KEYWORDS & FUNCTION</h3>
+    <p style="text-align: center;">REPEAT</p>
+    <div class="repeatContainer">
+        <div class="repeatItem">1</div>
+        <div class="repeatItem">2</div>
+        <div class="repeatItem">3</div>
+        <div class="repeatItem">4</div>
+        <div class="repeatItem">5</div>
+        <div class="repeatItem">6</div>
+        <div class="repeatItem">7</div>
+        <div class="repeatItem">8</div>
+        <div class="repeatItem">9</div>
+    </div>
+    <p style="text-align: center;">MIN CONTENT</p>
+    <div class="minContentContainer">
+        <div class="minContentItem">1</div>
+        <div class="minContentItem">2</div>
+        <div class="minContentItem">3</div>
+        <div class="minContentItem">4</div>
+        <div class="minContentItem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, a?</div>
+        <div class="minContentItem">6</div>
+        <div class="minContentItem">7</div>
+        <div class="minContentItem">8</div>
+        <div class="minContentItem">9</div>
+    </div>
+    <p style="text-align: center;">MAX CONTENT</p>
+    <div class="maxContentContainer">
+        <div class="maxContentItem">1</div>
+        <div class="maxContentItem">2</div>
+        <div class="maxContentItem">3</div>
+        <div class="maxContentItem">4</div>
+        <div class="maxContentItem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, alias!
+        </div>
+        <div class="maxContentItem">6</div>
+        <div class="maxContentItem">7</div>
+        <div class="maxContentItem">8</div>
+        <div class="maxContentItem">9</div>
+    </div>
+    <p style="text-align: center;">MINMAX</p>
+    <div class="minmaxContainer">
+        <div class="minmaxItem">hanendyo</div>
+        <div class="minmaxItem">2</div>
+        <div class="minmaxItem">indira</div>
+        <!-- <div class="minmaxItem">4</div>
+                <div class="minmaxItem">5</div>
+                <div class="minmaxItem">6</div>
+                <div class="minmaxItem">7</div>
+                <div class="minmaxItem">8</div>
+                <div class="minmaxItem">9</div> -->
+    </div>
+    <p style="text-align: center;">AUTO FILL</p>
+    <div class="autofillContainer">
+        <div class="autofillItem">1</div>
+        <div class="autofillItem">2</div>
+        <div class="autofillItem">3</div>
+        <div class="autofillItem">4</div>
+        <!-- <div class="autofillItem">5</div>
+                <div class="autofillItem">6</div>
+                <div class="autofillItem">7</div>
+                <div class="autofillItem">8</div>
+                <div class="autofillItem">9</div> -->
+    </div>
+    <p style="text-align: center;">AUTO FIT</p>
+    <div class="autofitContainer">
+        <div class="autofitItem">1</div>
+        <div class="autofitItem">2</div>
+        <div class="autofitItem">3</div>
+        <div class="autofitItem">4</div>
+        <!-- <div class="autofitItem">5</div>
+                <div class="autofitItem">6</div>
+                <div class="autofitItem">7</div>
+                <div class="autofitItem">8</div>
+                <div class="autofitItem">9</div> -->
+    </div>
+
+    <h3>GRID AREA & GAP</h3>
+    <p style="text-align: center;">GRID TEMPLATE AREA</p>
+    <div class="areaContainer">
+        <div class="areaItem header">header</div>
+        <div class="areaItem sidebar">sidebar</div>
+        <div class="areaItem content">content</div>
+        <div class="areaItem footer">footer</div>
+    </div>
+    <p style="text-align: center;">GRID TEMPLATE (SHORTHAND)</p>
+    <div class="shorthandContainer">
+        <div class="shorthandItem ">1</div>
+        <div class="shorthandItem ">2</div>
+        <div class="shorthandItem ">3</div>
+        <div class="shorthandItem ">4</div>
+        <div class="shorthandItem ">5</div>
+        <div class="shorthandItem ">6</div>
+    </div>
+    <p style="text-align: center;">GRID GAP</p>
+    <div class="gapContainer">
+        <div class="gapItem ">1</div>
+        <div class="gapItem ">2</div>
+        <div class="gapItem ">3</div>
+        <div class="gapItem ">4</div>
+        <div class="gapItem ">5</div>
+        <div class="gapItem ">6</div>
+    </div>
+
+    <h3>GRID ALIGNMENT</h3>
+    <p style="text-align: center;">JUSTIFY ITEMS</p>
+    <div class="justifyStartContainer">
+        <div class="alignmentItem ">justifyStart</div>
+        <div class="alignmentItem ">justifyStart</div>
+    </div>
+    <div class="justifyEndContainer">
+        <div class="alignmentItem ">justifyEnd</div>
+        <div class="alignmentItem ">justifyEnd</div>
+    </div>
+    <div class="justifyCenterContainer">
+        <div class="alignmentItem ">justifyCenter</div>
+        <div class="alignmentItem ">justifyCenter</div>
+    </div>
+    <div class="justifyStrecthContainer">
+        <div class="alignmentItem ">justifyStrecth</div>
+        <div class="alignmentItem ">justifyStrecth</div>
+    </div>
+    <p style="text-align: center; margin-top: 0;">ketika widht dideklarasikan maka stretch tidak berfungsi</p>
+    <p style="text-align: center;">ALIGN ITEMS</p>
+    <div class="alignStartContainer">
+        <div class="alignmentItem ">alignStart</div>
+        <div class="alignmentItem ">alignStart</div>
+    </div>
+    <div class="alignEndContainer">
+        <div class="alignmentItem ">alignEnd</div>
+        <div class="alignmentItem ">alignEnd</div>
+    </div>
+    <div class="alignCenterContainer">
+        <div class="alignmentItem ">alignCenter</div>
+        <div class="alignmentItem ">alignCenter</div>
+    </div>
+    <div class="alignStrecthContainer">
+        <div class="alignmentItem ">alignStrecth</div>
+        <div class="alignmentItem ">alignStrecth</div>
+    </div>
+    <p style="text-align: center; margin-top: 0;">ketika height dideklarasikan maka stretch tidak berfungsi</p>
+
+    <p style="text-align: center;">PLACE ITEMS</p>
+    <div class="placeStartCenterContainer">
+        <div class="alignmentItem">placeStartCenter</div>
+        <div class="alignmentItem">placeStartCenter</div>
+    </div>
+    <div class="placeEndCenterContainer">
+        <div class="alignmentItem ">placeEndCenter</div>
+        <div class="alignmentItem ">placeEndCenter</div>
+    </div>
+    <div class="placeCenterCenterContainer">
+        <div class="alignmentItem ">placeCenterCenter</div>
+        <div class="alignmentItem ">placeCenterCenter</div>
+    </div>
+    <div class="placeStrecthCenterContainer">
+        <div class="alignmentItem ">placeStrecthCenter</div>
+        <div class="alignmentItem ">placeStrecthCenter</div>
+    </div>
+
+    <p style="text-align: center;">JUSTIFY CONTENT</p>
+    <div class="justifySpaceAroundContainer">
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+    </div>
+    <div class="justifySpaceBetweenContainer">
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+    </div>
+    <div class="justifySpaceEvenlyContainer">
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+    </div>
+    <p style="text-align: center;">ALIGN CONTENT</p>
+    <div class="alignSpaceAroundContainer">
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+        <div class="alignmentItem ">Around</div>
+    </div>
+    <div class="alignSpaceBetweenContainer">
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+        <div class="alignmentItem ">Between</div>
+    </div>
+    <div class="alignSpaceEvenlyContainer">
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+        <div class="alignmentItem ">Evenly</div>
+    </div>
+    <p style="text-align: center;">PLACE CONTENT</p>
+    <div class="placeAroundBetweenContainer">
+        <div class="alignmentItem ">Around <br> Between</div>
+        <div class="alignmentItem ">Around <br> Between</div>
+        <div class="alignmentItem ">Around <br> Between</div>
+        <div class="alignmentItem ">Around <br> Between</div>
+        <div class="alignmentItem ">Around <br> Between</div>
+        <div class="alignmentItem ">Around <br> Between</div>
+        <div class="alignmentItem ">Around <br> Between</div>
+        <div class="alignmentItem ">Around <br> Between</div>
+        <div class="alignmentItem ">Around <br> Between</div>
+    </div>
+    <div class="placeBetweenEvenlyContainer">
+        <div class="alignmentItem ">Between <br> Evenly</div>
+        <div class="alignmentItem ">Between <br> Evenly</div>
+        <div class="alignmentItem ">Between <br> Evenly</div>
+        <div class="alignmentItem ">Between <br> Evenly</div>
+        <div class="alignmentItem ">Between <br> Evenly</div>
+        <div class="alignmentItem ">Between <br> Evenly</div>
+        <div class="alignmentItem ">Between <br> Evenly</div>
+        <div class="alignmentItem ">Between <br> Evenly</div>
+        <div class="alignmentItem ">Between <br> Evenly</div>
+    </div>
+    <div class="placeEvenlyAroundContainer">
+        <div class="alignmentItem ">Evenly <br> Around</div>
+        <div class="alignmentItem ">Evenly <br> Around</div>
+        <div class="alignmentItem ">Evenly <br> Around</div>
+        <div class="alignmentItem ">Evenly <br> Around</div>
+        <div class="alignmentItem ">Evenly <br> Around</div>
+        <div class="alignmentItem ">Evenly <br> Around</div>
+        <div class="alignmentItem ">Evenly <br> Around</div>
+        <div class="alignmentItem ">Evenly <br> Around</div>
+        <div class="alignmentItem ">Evenly <br> Around</div>
+    </div>
+
+
 </body>
 
 </html>
