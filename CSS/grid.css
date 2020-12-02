@@ -966,3 +966,250 @@ GRID ALIGNMENT
 .alignmentItem:nth-child(odd){
     background-color: seagreen;
 }
+/*  */
+
+
+
+/* GRID ITEM PROPERTIES */
+
+/* 
+1.grid-column-start & grid-column-end 
+grid-row-start & grid-row-end        
+-> menentukan tempat dari grid item yang mengacu pada nomor atau nama grid line yang spesifik
+
+
+ex:
+    grid-column-start: <nomor> | <nama> | span <nomor> | span <nama> | auto;
+    grid-column-end: <nomor> | <nama> | span <nomor> | span <nama> | auto;
+    grid-row-start: <nomor> | <nama> | span <nomor> | span <nama> | auto;
+    grid-row-end: <nomor> | <nama> | span <nomor> | span <nama> | auto;
+
+    > <nomor> | <nama> = mengacu pada nomor atau nama yang kita beri pada grid line
+    > span <nomor> = item akan memanjang / melebar sampai sejumlah nomor
+    > span <nama> = item akan memanjang / melebar sampai ke nama grid line tertentu
+
+
+
+shorthand: 
+    grid-column: <start-line> / <end-line> | <start-line> / span <value>
+    grid-row: <start-line> / <end-line> | <start-line> / span <value>   
+
+ */
+
+/*  */
+
+
+/* number */
+.itemPropertiesContainer{
+    width: 60%;
+    margin: 20px auto;
+    display: grid;
+     /* number */
+     grid-template-columns: minmax(100px, 200px) 1fr 1fr;
+     grid-template-rows: repeat(3, 100px);
+}
+
+.positive{
+
+    /* 
+    shorthand: 
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    
+    shorthand span:
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    */
+
+    /* main */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    background-color: lightseagreen;
+
+}
+.positiveSpan{
+    /* main */
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+
+    background-color: lightseagreen;
+
+}
+.negative{
+    /* main */
+    grid-column-start: -1;
+    grid-column-end: -4;
+    grid-row-start: -1;
+    grid-row-end: -2;
+
+
+    background-color: lightseagreen;
+
+}
+
+/* name */
+.itemPropertiesNameContainer{
+    width: 60%;
+    margin: 20px auto;
+    display: grid;
+
+    /* name */
+    grid-template-columns: 
+    [col1] minmax(100px, 200px)
+    [col2] 1fr
+    [col3] 1fr
+    [col4];
+    grid-template-rows: 
+    [row1] 100px
+    [row2] 100px
+    [row3] 100px
+    [row3];
+
+}
+
+
+.positiveName{
+        /* main */
+        grid-column-start: col2;
+        grid-column-end: col4;
+        grid-row-start: row2;
+        grid-row-end: row3;
+    
+        background-color: lightseagreen;
+}
+
+
+.propertiesItem{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+   
+}
+
+/*  */
+
+/* 
+GRID AREA
+>menentukan nama area pada item sesuai dengan template yang sudah dibuat yang 
+    sudah dibuat sebelumnya melalui properti grid-template-area.
+        Bisa digunakan sebagai shorthand grid-column-start-end, grid-row-start-end.
+
+shorthand:
+>grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>        
+
+
+*/
+.areaPropertiesContainer{
+    width: 60%;
+    margin: 20px auto;
+    display: grid;
+     /* number */
+     grid-template-columns: minmax(100px, 200px) 1fr 1fr;
+     grid-template-rows: repeat(3, 100px);
+}
+
+.area{
+    /* main */
+    grid-area: 3 / 2 / 4 / 4;
+
+    background-color: lightseagreen;
+}
+/*  */
+
+/* justify-self */
+.justSelfContainer{
+    width: 300px;
+    margin: 20px auto;
+    display: grid;
+    border: 2px solid black;
+     /* number */
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 50px 50px;
+
+
+}
+
+.selfStart{
+    /* main */
+    justify-self: start;
+
+    background-color: lightseagreen;
+}
+.selfEnd{
+    /* main */
+    justify-self: end;
+
+    background-color: lightseagreen;
+}
+.selfCenter{
+    /* main */
+    justify-self: center;
+
+    background-color: lightseagreen;
+}
+.selfStretch{
+    /* main */
+    justify-self: stretch;
+
+    background-color: lightseagreen;
+}
+
+/* align self */
+.alignSelfContainer{
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    display: grid;
+    border: 2px solid rgb(194, 187, 187);
+     /* number */
+     grid-template-columns: 1fr;
+     grid-template-rows: 50px 50px;
+
+
+}
+
+.alignStart{
+    /* main */
+    align-self: start;
+
+    background-color: lightseagreen;
+}
+.alignEnd{
+    /* main */
+    align-self: end;
+
+    background-color: lightseagreen;
+}
+.alignCenter{
+    /* main */
+    align-self: center;
+
+    background-color: lightseagreen;
+}
+.alignStretch{
+    /* main */
+    align-self: stretch;
+
+    background-color: lightseagreen;
+}
+
+
+.self{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+   
+}
+
+/* 
+PLACE-SELF
+shorthand:
+>place-self: <align-self> <justify-self>
+*/
