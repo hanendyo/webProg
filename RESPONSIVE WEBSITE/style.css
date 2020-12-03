@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ddd;
+    font: 18px;
+    font-family: 'JetBrains Mono', monospace;
+    margin: 10px;
+}
+
+.img{
+    width: 100%;
+}
+
+/* container */
+.container{
+    display: grid;
+    gap: 5px;
+}
+
+/* header */
+.header{
+    display: grid;
+    grid-template-areas: 
+    'hero hero fitur1'
+    'hero hero fitur2'
+    
+    ;
+}
+
+.hero{
+    grid-area: hero;
+    min-height: 200px;
+    background-image: url(./img/heroDisplay.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.hero > * {
+    display: none;
+}
+
+.fitur{
+    background-color: black;
+    color: white;
+    display: grid;
+    place-content: center center;
+    text-align: center;
+    cursor: pointer;
+}
+.fitur .fiturContent{
+    background-color: black;
+    opacity: 0.8;
+   
+}
+
+.fitur .price {
+    font-size: 1.2em;
+}
+
+.fitur1{
+    grid-area: fitur1;
+    background-image: url(./img/hoodieDisplay.png);
+    background-size: cover;
+}
+
+.fitur2{
+    grid-area: fitur2;
+    background-image: url(./img/tshirtDisplay.png);
+    background-size: cover;
+}
+
+/* nagivation */
+.menu {
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 5px;
+    background-color: orange;
+}
+
+
+ .menu .brand {
+    margin-top: 1px;
+    font-size: 2em;
+} 
+
+.menu ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+    margin: 5px;
+}
+
+
+
+.menu a{
+    display: block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+
+/* Hamburger Menu */
+.menuToggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative; 
+    
+   }
+   
+   .menuToggle input {
+       position: absolute;
+       width: 40px;
+       height: 30px;
+       left: -5px;
+       top: -3px;
+       opacity: 0;
+       cursor: pointer;
+       z-index: 2;
+   }
+   
+   .menuToggle span {
+       display: block;
+       width: 28px;
+       height: 3px;
+       background-color: black;
+       border-radius: 3px;
+       transition: all 0.4s;
+   }
+   
+   /* Hamburger Menu Animation */
+   .menuToggle span:nth-child(2){
+       transform-origin: 0 0;
+   }
+   .menuToggle span:nth-child(4){
+       transform-origin: 0 100%;
+   }
+   
+   .menuToggle input:checked ~ span:nth-child(2){
+       background-color: #fff;
+       transform: rotate(45deg) translate(-1px, -1px);
+   }
+   
+   .menuToggle input:checked ~ span:nth-child(4) {
+       background-color: #fff;
+       transform: rotate(-45deg) translate(-1px, 0);
+   }
+   
+   .menuToggle input:checked ~ span:nth-child(3) {
+       opacity: 0;
+       transform: scale(0)
+   }
+   
+
+/* services */
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.services .infoServices{
+    grid-column: 1 / -1;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+.service{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.service .icon {
+    font-size: 2.2em;
+}
+
+.service h3{
+    padding-bottom: 20px;
+}
+.service p {
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 0.6em;
+}
+
+
+
+.gallery {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 5px;
+}
+
+.gallery .infoGallery{
+    grid-column: 1 / -1;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.footer {
+    
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+
+
+/* responsive breakpoint */
+
+/* full  */
+@media (max-width: 1024px) {
+    .menu {
+        order: inherit;
+        grid-template-columns: 1fr;;
+    }
+    .menu .brand{
+        display: none;
+    }
+    .hero > * {
+        display: block;
+        background-color: black;
+        opacity: 0.8;
+        color: white;
+    }
+
+
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        padding: 0;
+    }
+
+
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    .menu{
+        order: -1;
+        justify-items: end;
+        background-color: #ddd;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    .menu  ul {
+        display: flex;
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        width: 100%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        z-index: 1;
+        transform: translateY(-100%);
+        transition: all 0.3s;
+        opacity: 0.3;
+    }
+
+    .menu .menuList li a {
+        font-size: 2em;
+    }
+
+    .menu ul.slide{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .menuToggle {
+        display: flex;
+        z-index: 2;
+        /* background-color: orange */
+        ;
+    }
+}
+
+
+
+
+
+/* mobile */
+@media (max-width: 481px) {
+    
+    .header{
+        grid-template-areas: 
+        'hero'
+        'fitur1'
+        'fitur2'
+        ;
+    }
+    .fitur{
+        padding: 10px;
+    }
+
+    .menu {
+        background-color: #ddd;
+    }
+  
+    .menu .menuList li a {
+        font-size: 1.3em;
+    }
+
+
+
+}
+
+
