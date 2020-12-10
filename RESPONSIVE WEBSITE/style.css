@@ -24,8 +24,8 @@ body {
 .header{
     display: grid;
     grid-template-areas: 
-    'hero hero fitur1'
-    'hero hero fitur2'
+    'hero  fitur1'
+    'hero  fitur2'
     
     ;
 }
@@ -58,7 +58,10 @@ body {
 }
 
 .fitur .price {
-    font-size: 1.2em;
+    font-size: 1.8em;
+}
+.fitur .item {
+    font-size: 1.3em;
 }
 
 .fitur1{
@@ -212,6 +215,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 5px;
+    justify-items: center;
 }
 
 .infoGallery{

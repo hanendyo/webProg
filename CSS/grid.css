@@ -1060,7 +1060,7 @@ shorthand:
 
     /* name */
     grid-template-columns: 
-    [col1] minmax(100px, 200px)
+    [col1] minmax(200px, 300px)
     [col2] 1fr
     [col3] 1fr
     [col4];
