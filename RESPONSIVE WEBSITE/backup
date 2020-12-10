@@ -170,15 +170,14 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
-    
+    margin-top: 50px;
 }
 
-.infoServices{
-    /* grid-column: 1 / -1; */
-    background-color: orange;
-    color: black;
+.services .infoServices{
+    grid-column: 1 / -1;
+    background-color: black;
+    color: white;
     text-align: center;
-    margin-top: 50px;
 }
 
 
@@ -208,25 +207,24 @@ body {
 
 
 .gallery {
-    
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 5px;
 }
 
-.infoGallery{
-    /* grid-column: 1 / -1; */
-    background-color: orange;
-    color: black;
+.gallery .infoGallery{
+    grid-column: 1 / -1;
+    background-color: black;
+    color: white;
     text-align: center;
     margin-bottom: 5px;
-    margin-top: 50px;
 }
 
 .footer {
     
-    background-color: orange;
-    color: black;
+    background-color: black;
+    color: white;
     text-align: center;
     margin-top: 5px;
     padding: 10px;
@@ -305,28 +303,17 @@ body {
     .menuToggle {
         display: flex;
         z-index: 2;
-        margin-bottom: 5px;
+        /* background-color: orange */
+        ;
     }
-
-    .gallery {
-        /* justify-content: space-evenly; */
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: ce;
-    }
-/* 
-    .gallery img  {
-        justify-items: end;
-    } */
 }
 
 
 
 
 
-
-
 /* mobile */
-@media (min-width: 443px) and (max-width: 481px) {
+@media (max-width: 481px) {
     
     .header{
         grid-template-areas: 
@@ -347,69 +334,6 @@ body {
         font-size: 1.3em;
     }
 
-    .menuToggle {
-        margin-bottom: 5px;
-    }
 
-    .gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-
-}
-
-
-
-
-
-/* mobile iphone 5 */
-@media  all and (max-width: 442px) {
-
- 
-    .header{
-        grid-template-areas: 
-        'hero'
-        'fitur1'
-        'fitur2'
-        ;
-    }
-    .fitur{
-        padding: 10px;
-    }
-/* 
-    .menu {
-        background-color: red;
-    } */
-  
-    .menu .menuList li a {
-        font-size: 1.3em;
-    }
-
-    .menuToggle {
-        margin-bottom: 5px;
-    }
-
-
-    .gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .menu  .menuList {
-        display: flex;
-        position: absolute;
-        right: -103px;
-        top: -5px;
-        /* width: 417px; */
-        width: 133%;
-        height: 134vh;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        background-color: black;
-        z-index: 1;
-        transform: translateY(-100%);
-        transition: all 0.3s;
-        opacity: 0.3;
-        margin-right: -3px;
-    }
 
 }
