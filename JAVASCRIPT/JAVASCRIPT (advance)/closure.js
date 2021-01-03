@@ -1,6 +1,9 @@
-// CLOSURE
+// CLOSURE 
+// --> ketika inner function mengakses variable parentnya
 
-//Lexical Scope 
+//Lexical Scope --> jika didalam scope tidak ada variablenya, 
+//                      scope tersebut akan keluar dan mencari di parent scopenya,
+//                          akan terus keluar sampai menemukan variablenya.
 
 //using closure #1
 function init(){
@@ -10,8 +13,9 @@ function init(){
 
     //closure --> menggunakan variable dari scope parentnya, jika lokal tidak ada
     function tampilNama(){
-        console.log(nama);
-        console.log(umur);
+        // console.log(nama);
+        // console.log(umur);
+        return nama, umur
     }
     // 
     tampilNama();
@@ -61,6 +65,7 @@ let add = (function(){ //--> menambahkan kurung tutup (function(){})();
     let counter = 0;
     return function(){
         return ++counter;
+        // return counter++;
     }
 }) ();
 

@@ -1,6 +1,8 @@
 //-------
 //RECURSIVE
 
+
+console.log('fungsi recursive & looping: ');
 // looping
 function facto(n) {
     var hasil = 1
@@ -33,7 +35,7 @@ function hitungVolume1(sisi) {
 var kubus1 = hitungVolume1
 var kubus2 = hitungVolume1
 
-console.log('fungsi expression: ');
+console.log('\nfungsi expression: ');
 console.log(kubus1(5));
 console.log(kubus2(2));
 console.log(kubus1(5) + kubus2(2));
@@ -62,18 +64,19 @@ console.log(hitungVolume2(5, 2));
 
 var a = ['hanendyo', 'indira', 'hartono', 'putra']
 
-//slice(<indexAwalAkanMasukKeArrayBaru>, <IndexAkhirTidakAkanMasuk>)
+//slice(<indexAwalSampaiSebelumIndexTerakhirAkanMasukKeArrayBaru>, <IndexAkhirTidakAkanMasuk>)
 //jika kita memilih angka 0,1,2,3,4 dan menggunakan slice(1,3),
 //param#1:mengambil dari index ke-1 yaitu angka 1, & param#2:memilih index sebelum terakhir dari index-3, yaitu index-2
 //karena index-3 cuman sebagai 'tembok' saja  
 var a1 = a.slice(1, 3)
-console.log('SLICE');
+console.log('\nSLICE:');
 console.log(a1);
 console.log('\n');
 
 //splice(indexAwal, mauDihapusBerapaBanyak, elemenBaru1, elemenBaru2, ...)
+//splice index awalnya itu 1, bukan 0.
 a.splice(2, 0, 'lamlekom')
-console.log('SPLICE');
+console.log('SPLICE:');
 console.log(a);
 console.log('\n');
 
@@ -86,12 +89,12 @@ var b = [1, 2, 3, 4, 5, 6, 7]
 var b2 = b.map(function (e) {
     return e
 })
-console.log('MAP');
+console.log('MAP:');
 console.log(b2);
 console.log('\n');
 
 //foreach
-console.log('FOREACH');
+console.log('FOREACH:');
 b.forEach(function (x) {
     console.log(x);
 })
@@ -104,9 +107,13 @@ console.log('\n');
 var c = [3, 1, 10, 4, 2, 7, 20, 5, 8, 6]
 
 c.sort(function (a, b) {
-    return a - b
+    //ascending
+    // return a - b 
+
+    //decending
+    return b - a
 })
-console.log('SORT');
+console.log('SORT:');
 console.log(c);
 console.log('\n');
 //-----
@@ -119,15 +126,15 @@ var d = [3, 1, 10, 4, 2, 7, 20, 5, 8, 6]
 var d1 = d.filter(function (x) {
     return (x > 5)
 })
-console.log('FILTER');
+console.log('FILTER:');
 console.log(d1);
 console.log('\n');
 
-//find
+//find --> hanya nilai pertama yg diambil
 var d2 = d.find(function (x) {
     return (x > 5)
 })
-console.log('FILTER');
+console.log('FILTER:');
 console.log(d2);
 console.log('\n');
 
@@ -150,7 +157,7 @@ var identitas = {
         provinsi: 'Jawa Barat'
     }
 }
-console.log('OBJECT LITERAL');
+console.log('OBJECT LITERAL:');
 console.log(identitas);
 console.log('\n');
 
@@ -159,7 +166,7 @@ function membuatObject(nama, usia, email, jalan, desa, kecamatan, kabupaten, pro
     var obj = {};
     obj.nama = nama,
         obj.usia = usia,
-        obj.email = email
+        obj.email = email,
     obj.alamat = {},
         obj.alamat.jalan = jalan,
         obj.alamat.desa = desa,
@@ -170,11 +177,11 @@ function membuatObject(nama, usia, email, jalan, desa, kecamatan, kabupaten, pro
 }
 
 var obj1 = membuatObject('hanendyo', 24, 'hanendyogmail.com', 'griya waringin elok a8/3', 'cimanggis', 'bojonggede', 'bogor', 'jawa barat')
-console.log('OBJECT FUNCTION DECLARATION');
+console.log('OBJECT FUNCTION DECLARATION:');
 console.log(obj1);
 console.log('\n');
 
-//function construction
+//function construction menggunakan this
 
 //deklarasi variable menggunakan huruf Kapital
 function NamaOrang(nama, usia, email, jalan, desa, kecamatan, kabupaten, provinsi) {
@@ -192,10 +199,13 @@ function NamaOrang(nama, usia, email, jalan, desa, kecamatan, kabupaten, provins
 //menambahkan <new> untuk memanggil fungsi constructor
 //new me-return object baru atau istilahnya dicopy-paste
 var NamaOrang1 = new NamaOrang('hanendyo', 24, 'hanendyogmail.com', 'griya waringin elok a8/3', 'cimanggis', 'bojonggede', 'bogor', 'jawa barat')
-console.log('OBJECT FUNCTION CONSTRUCTOR');
+console.log('OBJECT FUNCTION CONSTRUCTOR:');
 console.log(NamaOrang1);
 console.log('\n');
 
+
+
+//LUPA
 //setTimeOut()
 const tes = setTimeout (function(){
     for(var i = 0; i < 5; i++){
@@ -212,7 +222,7 @@ tombolTimeOut.addEventListener('click', function(){
 
 
 //setInterval()
-const tes = setInterval (function(){
+const testis = setInterval (function(){
     for(var i = 0; i < 1; i++){
        console.log('detik ke-' + i);
     }
@@ -220,7 +230,7 @@ const tes = setInterval (function(){
 
 const tombolInterval = document.getElementById('interval')
 tombolInterval.addEventListener('click', function(){
-    clearTimeout(tes)
+    clearTimeout(testis)
     console.log('selesai');
 })
 

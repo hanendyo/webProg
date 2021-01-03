@@ -35,6 +35,7 @@ body {
     min-height: 200px;
     background-image: url(./img/heroDisplay.png);
     background-size: cover;
+    /* background-repeat: no-repeat; */
     background-position: center;
     padding: 50px;
 }
@@ -68,12 +69,14 @@ body {
     grid-area: fitur1;
     background-image: url(./img/hoodieDisplay.png);
     background-size: cover;
+    background-position: top -30px right 15px;
 }
 
 .fitur2{
     grid-area: fitur2;
     background-image: url(./img/tshirtDisplay.png);
     background-size: cover;
+    background-position: top -100px right 15px;
 }
 
 /* nagivation */
@@ -185,13 +188,19 @@ body {
 }
 
 
-.service{
+.service  {
     background-color: black;
-    color: white;
     padding: 10px;
     text-align: center;
     justify-content: center;
+    
 }
+
+.service a {
+    text-decoration: none;
+    color: white;
+}
+
 
 
 

@@ -19,6 +19,8 @@
     //
     // --> lokal execution context dapat mengakses window & arguments
 
+//note: ketika menggunakan function expression, function di dalam variable 
+//          tidak terkena hoisting.
 
 //contoh script
 function satu(){

@@ -27,10 +27,12 @@ var tambahPenumpang = function (namaPenumpang, penumpang) {
     }
     else {
         for (i = 0; i < penumpang.length; i++) {
+            // jika kursi yg sekarang kosong dan setelahnya belum diisi oleh penumpang baru 
             if (penumpang[i] == undefined && penumpang[i + 1] !== namaPenumpang) {
                 penumpang[i] = namaPenumpang
                 return penumpang
             }
+            // jika kursi sekarang namanya sama dengan penumpang baru
             else if (penumpang[i] == namaPenumpang && penumpang[i + 1] == namaPenumpang) {
                 console.log(penumpang[i + 1]);
                 console.log(namaPenumpang + ' sudah ada di angkot');
