@@ -9,8 +9,12 @@ function tampilkanPesan(callback){
     const nama = prompt(`masukkan nama: `);
     callback(nama);
 }
-
-tampilkanPesan(nama);
-
+// tampilkanPesan(nama);
 // atau
 // tampilkanPesan(nama => alert(`Halo ${nama} `))`
+
+
+// asynchronus callback
+console.log('satu');
+setTimeout(()=> console.log('dua'), 0); //--> biarpun timeOut nya 0, tetap diaggap sebagai asynch
+console.log('tiga');
