@@ -30,7 +30,7 @@ const janji2 = new Promise((resolve, reject) => {
             }, 3000);
     } else {
         setTimeout(()=>{
-            resolve('janji tidak ditepati');
+            reject('janji tidak ditepati');
             }, 3000);
     }
 });
