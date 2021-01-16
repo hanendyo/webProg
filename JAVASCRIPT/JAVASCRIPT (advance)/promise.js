@@ -1,6 +1,6 @@
 // PROMISE
 // object yang merepresentasikan keberhasilan / kegagalan 
-//      sebuah event yg asynchronus, di masa yg akan datang.
+//     sebuah event yg asynchronus, di masa yg akan datang.
 // janji (terpunuhi / ingkar)
 // state (fulfilled / rejected / pending)
 // callback (resolve / reject / finally)
@@ -41,6 +41,8 @@ console.log(janji2
     .then(response=>console.log(`OK!: ${response}`))
     .catch(response=>console.log(`NOT OK!: ${response}`)));
 console.log('dua');
+
+
 
 
 // contoh 3 Promise.all()

@@ -13,7 +13,7 @@
     //          window = global object
     //          this = window
 
-//2. Executi0n phase   
+//2. Execution phase   
     // --> function membuat lokal execution context,
     //          yang di dalamnya terdapat creation dan execution phase, termasuk hoisting.
     //

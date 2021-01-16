@@ -183,7 +183,7 @@ console.log('\n');
 
 //function construction menggunakan this
 
-//deklarasi variable menggunakan huruf Kapital
+//deklarasi variable harus menggunakan huruf Kapital
 function NamaOrang(nama, usia, email, jalan, desa, kecamatan, kabupaten, provinsi) {
     this.nama = nama,
         this.usia = usia,
@@ -236,13 +236,13 @@ tombolInterval.addEventListener('click', function(){
 
 
 //program hitung mundur 
-const tanggalTujuan = new Date('Oct 12, 2020 00:00:00').getTime()
+const tanggalTujuan = new Date('Jan 15, 2021 16:27:00').getTime()
 
 const hitungMundur = setInterval(function(){
     const tanggalSekarang = new Date().getTime()
 
     //cari selisih
-    const selisih  = tanggalTujuan - tanggalSekarang
+    const selisih = tanggalTujuan - tanggalSekarang
 
     const hari = Math.floor(selisih / (1000 * 60 * 60 * 24))
     const jam = Math.floor(selisih % (1000 * 60 * 60 * 24) / (1000 * 60 * 60 ))
@@ -253,7 +253,7 @@ const hitungMundur = setInterval(function(){
     teks.innerHTML= 'waktu anda tinggal: ' + hari + 'hari ' + jam + 'jam ' + menit + 'menit ' + detik + 'detik lagi'
 
     //ketika sudah 0, maka hentikan
-    if(selisih == 0){
+    if(selisih == 0 || selisih <= 0){
         clearInterval(hitungMundur)
         teks.innerHTML = 'waktu habis!'
     }

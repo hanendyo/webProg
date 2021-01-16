@@ -66,10 +66,10 @@ while (tanya) {
 
     }
 
-    ulang = confirm('main lagi?')
+    tanya = confirm('main lagi?')
 
     //untuk tidak mengulang bermain
-    if (ulang === false) {
+    if (tanya === false) {
         break;
     }
 

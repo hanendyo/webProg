@@ -23,7 +23,9 @@ function Mahasiswa (nama, energi) {
 
     return mahasiswa;
 }
+
 let hanendyo = Mahasiswa('hanendyo', 10)
+
 // 
 
 //.prototype dgn function constructor

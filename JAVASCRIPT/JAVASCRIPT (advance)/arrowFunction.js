@@ -3,7 +3,7 @@ let mahasiswa = [`Hanendyo Indira`, `Wafa Nabilah`, `Afif Nur Ayu`, `Diyanah Fit
 
 let jumlahHuruf = mahasiswa.map((nama)=>
     (
-        {name: nama, totalChar: nama.length}
+        {name: nama, totalChar: nama.length, typeof: typeof(nama)}
     )); //--> gunakan tutup kurung lagi untuk me-return object
 
 console.table(jumlahHuruf);
@@ -21,7 +21,7 @@ const Manusia = function() {
     this.umur = 24;
     this.sayHello = function(){
         console.log(`halo saya ${this.nama}, saya ${this.umur} tahun.`);
-        // console.log(this);
+        console.log(this);
     }
 
     setInterval(()=> {
@@ -44,6 +44,7 @@ box.addEventListener('click', function(){
     }
 
     this.classList.toggle(satu);
+    
     setTimeout(() => { //--> harus memakai arrow function 
         this.classList.toggle(dua); //--> agar this mengacu pada parentnya.
     }, 600);

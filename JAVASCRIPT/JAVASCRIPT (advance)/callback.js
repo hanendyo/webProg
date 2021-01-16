@@ -9,7 +9,7 @@ function tampilkanPesan(callback){
     const nama = prompt(`masukkan nama: `);
     callback(nama);
 }
-// tampilkanPesan(nama);
+tampilkanPesan(halo);
 // atau
 // tampilkanPesan(nama => alert(`Halo ${nama} `))`
 

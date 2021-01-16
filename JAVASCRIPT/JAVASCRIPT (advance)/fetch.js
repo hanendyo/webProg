@@ -54,21 +54,22 @@ searchButton.addEventListener('click', async function(){
 function getMovies(keyword) {
     return fetch(`http://www.omdbapi.com/?apikey=309b2888&s=` + keyword)
     .then(response => {
+        console.log(`res: `, response);
+
         if(!response.ok){
             throw new Error(response.statusText);
         }
         return response.json();
-        // console.log(response);
     })
     .then(response => {
+        console.log(response.Search);
         
         if(response.Response === "False") {
             throw new Error(response.Error);
         }
         return response.Search;
-        // console.log(response);
     
-    }); 
+    });     
 }
 
 function updateUi(movies){
@@ -83,6 +84,7 @@ function updateUi(movies){
 
 // detail button
 document.addEventListener('click', async function(e){
+    console.log('terget:', e.target);
     if(e.target.classList.contains('modal-detail-button')){
         const imdbid = e.target.dataset.imdbid;
         const movieDetail = await getMovieDetail(imdbid);
@@ -91,9 +93,13 @@ document.addEventListener('click', async function(e){
 })
 
 function getMovieDetail(imdbid){
+    console.log(`imdbid:`, imdbid);
     return fetch(`http://www.omdbapi.com/?apikey=309b2888&i=` + imdbid )
     .then(response => response.json())
-    .then(m => m);
+    .then(m => {
+        console.log(`m:`, m);
+        return m;
+    });
 }
 
 function updateUiDetail(m){
